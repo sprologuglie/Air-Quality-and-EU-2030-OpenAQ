@@ -24,8 +24,8 @@ This repository aims to produce **transparent**, **reproducible**, and **quality
 - **Data source**: OpenAQ (measurements + sensors metadata)
 
 ## What you get
-- **Clean/aggregated datasets** (city-day-pollutant and city-year-pollutant)
-- **Quality coverage diagnostics** (coverage, missingness, confidence labels)
+- **Clean/aggregated dataset** (city-day-pollutant)
+- **Quality coverage diagnostics** (coverage, and confidence labels)
 - **Policy-oriented indicators**
   - annual means (NO₂, PM₂.₅, PM₁₀)
   - daily exceedance counts (where applicable)
@@ -33,11 +33,13 @@ This repository aims to produce **transparent**, **reproducible**, and **quality
 - **Reports**
   - Main comparison across 6 cities
   - Turin deep-dive (station heterogeneity + sensitivity to aggregation)
+  - Supplementary analyses
 
 ## Quick start
 ### 1) Setup
 - Python 3.10+ recommended
 - Create environment, install dependencies and package:
+  - `python venv .venv`
   - `.venv/Scripts/activate` (Windows)
   - `pip install -r requirements.txt`
   - `pip install -e .`
@@ -58,40 +60,54 @@ This repository aims to produce **transparent**, **reproducible**, and **quality
   - `python -m project.pipeline`
 
 
-> Note: raw downloads can be large and depend on API availability. See `docs/methodology.md` for caching/resume strategy.
+> Note: raw downloads can be large and depend on API availability. See `docs/methodology.md`
 
 ## Results (high-level)
 > Interpretation note: these are **threshold-based indicators** computed by this project. They are not necessarily legal compliance determinations, because official rules involve specific quality metrics.
-- **Distance-to-target scorecards**: `results/tables/scorecard.csv`
-- **Trend figures**: `results/figures/trends_*.png`
-- **Coverage dashboard**: `results/figures/coverage_*.png`          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+### Where to find results
+- **Comparison with EU directives**: `results/compliance_table.csv`
+- **Trend figures**: `results/plots/main/trends_annual_*.png`
+- **Exceedance Days**: `results/plots/main/compliance_days_2030_*.png`
+- **Coverage**: `results/quality_checks/`
 - **Turin deep-dive**: station-level plots and robustness checks in the report
 
-## Repository structure
-├── reports/
-│ ├── Supplementary/
-│ ├── report.ipynb
-│ └── turin_deep_dive.ipynb
-├── docs/
-│ └── methodology.md
-├── results/
-│ ├── plots/
-│   ├── CAQI/
-│   ├── density_plots/
-│   └── seasonal_trends/
-│ └── quality_checks/
-├── src/ 
-│ └── project
-│   ├── fetch.py
-│   ├── processing.py
-│   ├── pipeline.py
-│   └── results.py
-├── .env.example
-├── pyproject.toml
-├── config.yml
-├── requirements.txt
-├── LICENSE
-└── CONTRIBUTING.md
+### Snapshots
+![Daily dispersion](results/plots/main/daily_averages_boxplot.png)
+![NO2 annual trends](results/plots/main/trends_annual_no2.png)
+![NO2 exceedance days](results/plots/main/compliance_days_2030_no2.png)
+
+## Repository structure outline
+
+├── data/ <br>
+│ └── descriptive/ <br>
+├── reports/ <br>
+│ ├── Supplementary/ <br>
+│ ├── report.ipynb <br>
+│ └── turin_deep_dive.ipynb <br>
+├── docs/ <br>
+│ └── methodology.md <br>
+├── results/ <br>
+│ ├── plots/ <br>
+│   ├── CAQI/ <br>
+│   ├── density_plots/ <br>
+│   ├── main/ <br>
+│   └── seasonal_trends/ <br>
+│ └── quality_checks/ <br>
+│   ├── deepdive/ <br>
+│   └── figures/ <br>
+├── src/  <br>
+│ └── project <br>
+│   ├── fetch.py <br>
+│   ├── processing.py <br>
+│   ├── pipeline.py <br>
+│   └── results.py <br>
+├── .env.example <br>
+├── pyproject.toml <br>
+├── config.yml <br>
+├── requirements.txt <br>
+├── LICENSE <br>
+└── CONTRIBUTING.md <br>
 
 
 ## Methodology (1-minute overview)

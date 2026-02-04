@@ -9,15 +9,15 @@
 
 ## 2. Study design
 - Cities and time window
-  For the main analysis six italian cities were chosen: Turin, Milan, Florence, Rome, Naples and Palermo. They were chosen for being among the most populated italian cities and for being geographically spread across almost all the italian territory, spanning from north to south, thus being representative of different geographical and social peculiarities within the country
+  - For the main analysis six italian cities were chosen: Turin, Milan, Florence, Rome, Naples and Palermo. They were chosen for being among the most populated italian cities and for being geographically spread across almost all the italian territory, spanning from north to south, thus being representative of different geographical and social peculiarities within the country
 - Pollutants (NO₂, O₃, PM₁₀, PM₂.₅)
-  Four pollutants were chosen for these analysis: NO2, O3, PM10 and PM2.5. They were chosen for they are among the most measured and policy relevant. Future developements may include all the regulated pollutants
+  - Four pollutants were chosen for these analysis: NO2, O3, PM10 and PM2.5. They were chosen for they are among the most measured and policy relevant. Future developements may include all the regulated pollutants
 - Why these pollutants are policy-relevant
   Their monitoring is crucial for two main reasons:
   1. Public Health Impact:
-  - Particulate Matter (PM10 and PM2.5): These particles can penetrate deep into the lungs and even enter the bloodstream, causing respiratory and cardiovascular diseases. Reducing their concentration is a primary target for public health policies to reduce premature mortality.
-  - Nitrogen Dioxide (NO2): A toxic gas primarily emitted by road transport (diesel engines). It is a major trigger for asthma and reduced lung function in children.
-  - Ozone (O3): Unlike others, it is a secondary pollutant formed by chemical reactions. It is a powerful oxidant that causes respiratory distress and is a significant focus for summer smog alerts.
+    - Particulate Matter (PM10 and PM2.5): These particles can penetrate deep into the lungs and even enter the bloodstream, causing respiratory and cardiovascular diseases. Reducing their concentration is a primary target for public health policies to reduce premature mortality.
+    - Nitrogen Dioxide (NO2): A toxic gas primarily emitted by road transport (diesel engines). It is a major trigger for asthma and reduced lung function in children.
+    - Ozone (O3): Unlike others, it is a secondary pollutant formed by chemical reactions. It is a powerful oxidant that causes respiratory distress and is a significant focus for summer smog alerts.
   2. Monitoring these pollutants helps evaluate the effectiveness of "green" transitions. For example, No2 levels are a direct proxy for the success of electric mobility transitions, while Ozone levels are closely linked to rising global temperatures and climate change. Moreover, these pollutants affects vegetation and animals life along with humans.
 
 ## 3. Data retrieval
@@ -101,15 +101,15 @@ For each pollutant, after cleaning and quality checks, the pipeline computes sev
 ## 8. Threshold sets
 
 - EU current thresholds (with averaging period definitions)
-  The current thresholds were defined following the indications at https://environment.ec.europa.eu/topics/air/air-quality/eu-air-quality-standards_en (such tresholds were imposed over the course of several years of European legislation). Since daily limits remained almost unchanged (O3 remained unchanged, PM2.5 are unchanged relative to stage 1, while PM10 was 50 µg/m³ for stage 1 and 40 µg/m³ for stage 2, while now the limt is 45 µg/m³) <br>
-  The relevant values for annual mean limits are stored in `config.yml`:
-  "current_standards_year" refer to the annual mean limit value (PM2.5 = 25, PM10 = 40, NO2 = 40) <br>
+  - The current thresholds were defined following the indications at https://environment.ec.europa.eu/topics/air/air-quality/eu-air-quality-standards_en (such tresholds were imposed over the course of several years of European legislation). Since daily limits remained almost unchanged (O3 remained unchanged, PM2.5 are unchanged relative to stage 1, while PM10 was 50 µg/m³ for stage 1 and 40 µg/m³ for stage 2, while now the limt is 45 µg/m³) <br>
+  - The relevant values for annual mean limits are stored in `config.yml`:
+  "current_standards_year" refer to the annual mean limit value (PM2.5 = 25, PM10 = 40, NO2 = 40)
 
 - EU 2030 targets (with definitions)
-  EU 2030 targets were defined following the Directive (EU) 2024/2881 of the European Parliament and of the Council of 23 October 2024 on ambient air quality and cleaner air for Europe (target values are specified in annex I: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402881#anx_I). <br>
-  They have been sotred in `config.yml` as follows:
-  "new_standards_year" refer to the annual mean limit values indicated (PM2.5 = 10, PM10 = 20, NO2 = 20)
-  "new_standards_day" refer to the maxium daily values (PM2.5 = 25, PM10 = 45, NO2 = 50, O3 = 120)
+  - EU 2030 targets were defined following the Directive (EU) 2024/2881 of the European Parliament and of the Council of 23 October 2024 on ambient air quality and cleaner air for Europe (target values are specified in annex I: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402881#anx_I). <br>
+  - They have been sotred in `config.yml` as follows: <br>
+  "new_standards_year" refer to the annual mean limit values indicated (PM2.5 = 10, PM10 = 20, NO2 = 20) <br>
+  "new_standards_day" refer to the maxium daily values (PM2.5 = 25, PM10 = 45, NO2 = 50, O3 = 120) <br>
 
 
 ## 9. CAQI
@@ -163,76 +163,75 @@ For each pollutant, after cleaning and quality checks, the pipeline computes sev
     - **Compliance table** --> Table which compare annual averages and exeedance days with EU cuurent standards and 2030 targets -> `results/compliance_table.csv`
 
 - Produced figures:
-  results/
-    plots/
-      CAQI/
+  - results/
+    - plots/
+      - CAQI/
         - CAQI_per_parameter/ 
           - `CAQI_*.png` --> Collection of daily CAQI plots for each parameter separately
         - `CAQI_global.png` --> Daily global CAQI for each city
         - `count_CAQI.png` --> Count plot for each CAQI category per city
-      density_plots/ 
+      - density_plots/ 
         - `daily_averages_densityplot_*.png` --> Collection of desity plots for each city, divided per parameter
-      main/
+      - main/
         - `compliance_days_*.png` --> Plots with exceedance days for each city, divided per parameter
         - `trends_annual_*.png` --> Plots with annual means for each city, divided per parameter
         - `daily_averages_boxplot.png` --> Boxplot with distribution of daily averages for each city and parameter
-      seasonal_trends/ 
+      - seasonal_trends/ 
         - `seasonal_trends_*.png` --> Collection of seasonal average values for each city, divided per parameter
-    quality_checks/
-      deepdive/
+    - quality_checks/
+      - deepdive/
         - `Torino_active_sensors_per_day.png` --> Lineplot for active sensors in Torino for each day and parameter
         - `Torino_percent_days_avaiable_per_year.png` --> Barplot with percent days avaiable for each year
         - `Torino_sensors_percent_coverage_per_day.png` --> ECDF for percent coverage of Torino's sensors for each year and parameter
         - `Torino_sensors_percent_coverage_per_year.png` --> Barplot for percent coverage of Torino's sensors for each year and parameter
-      figures/
+      - figures/
         -`days_avaiable_heatmap.png` --> heatmap of percent days avaiable for each city, year and parameter
         - `median_active_sensors_heatmap.png` --> heatmap of median active sensors for each city, year and parameter
 
 
 ## 11. Reproducibility
 - Configuration (config.yml) parameters:
-  pipeline -> include option to run only certain steps
-    retry_failed -> select if retry for failed pages
-    do_fetch -> select if fetch data
-    do_clean -> select if doing cleaning and aggregation
-    do_results -> select if producing results
+  - pipeline -> include option to run only certain steps
+    - retry_failed -> select if retry for failed pages
+    - do_fetch -> select if fetch data
+    - do_clean -> select if doing cleaning and aggregation
+    - do_results -> select if producing results
 
-  locations -> list of cities to be queried
+  - locations -> list of cities to be queried
 
-  parameters -> list of paramteres
+  - parameters -> list of paramteres
 
-  yearfrom -> from which year retrieve measurements
-  yearto -> until which year retrieve measurements
+  - yearfrom -> from which year retrieve measurements
+  - yearto -> until which year retrieve measurements
 
-  openaq -> select certain parameters for the OpenAQ query
-    mobile -> select if quering mobile sensors
-    monitor -> select if quering monitors
-    radius -> the radius of the circumference from the coordinates from wich searching sensors
-    max_attempts -> the number of max retries for failed queries
+  - openaq -> select certain parameters for the OpenAQ query
+    - mobile -> select if quering mobile sensors
+    - monitor -> select if quering monitors
+    - radius -> the radius of the circumference from the coordinates from wich searching sensors
+    - max_attempts -> the number of max retries for failed queries
 
-  implausible_value_caps -> values from which the collected measurements is considered invalid
+  - implausible_value_caps -> values from which the collected measurements is considered invalid
 
-  flags -> parameters for quality filtering
-    sensors_active_per_day_high_flag -> number of median active sensors per day for the high quality flag
-    percent_days_avaiable_high_flag -> percent of days avaiable in a year for the high quality flags
-    sensors_active_per_day_medium_flag -> number of median active sensors per day for the medium quality flag
-    percent_days_avaiable_medium_flag -> percent of days avaiable in a year for the medium quality flags
-    percent_coverage_valid_sensor -> mean percent yearly coverage for valid sensors
-    percent_daily_coverage_valid_sensor -> mean percent daily coverage for valid sensors
-    exclude_invalid_sensors -> selects whether to exclude invalid sensors
-    percent_coverage_valid_day -> percent of hours avaiable in a day to be valid
-    exclude_invalid_days -> selects whether to exclude invalid days
+  - flags -> parameters for quality filtering
+    - sensors_active_per_day_high_flag -> number of median active sensors per day for the high quality flag
+    - percent_days_avaiable_high_flag -> percent of days avaiable in a year for the high quality flags
+    - sensors_active_per_day_medium_flag -> number of median active sensors per day for the medium quality flag
+    - percent_days_avaiable_medium_flag -> percent of days avaiable in a year for the medium quality flags
+    - percent_coverage_valid_sensor -> mean percent yearly coverage for valid sensors
+    - percent_daily_coverage_valid_sensor -> mean percent daily coverage for valid sensors
+    - exclude_invalid_sensors -> selects whether to exclude invalid sensors
+    - percent_coverage_valid_day -> percent of hours avaiable in a day to be valid
+    - exclude_invalid_days -> selects whether to exclude invalid days
 
-  new_standards_year -> EU 2030 targets for annual means
+  - new_standards_year -> EU 2030 targets for annual means
 
-  current_standards_year -> EU current standards for annual means
+  - current_standards_year -> EU current standards for annual means
 
-  new_standards_day -> EU 2030 targets for daily maximums
+  - new_standards_day -> EU 2030 targets for daily maximums
 
-  CAQI_breakpoints -> CAQI breakpoints for each parameter
+  - CAQI_breakpoints -> CAQI breakpoints for each parameter
 
-
-  quality_deep_locations -> list of cities to perform quality checks
+  - quality_deep_locations -> list of cities to perform quality checks
 
 - Determinism: what depends on API availability
   - Data depends on API availability, thus the results obtained by running the pipeline may not be exacltly the same
