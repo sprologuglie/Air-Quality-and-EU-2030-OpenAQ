@@ -37,7 +37,9 @@ flags:
   sensors_active_per_day_high_flag: 3
   percent_days_avaiable_high_flag: 80
   sensors_active_per_day_medium_flag: 2
-  percent_days_avaiable_medium_flag: 60
+  percent_days_avaiable_medium_flag: 70
+  sensors_active_per_day_low_flag: 2
+  percent_days_avaiable_low_flag: 60
   percent_coverage_valid_sensor: 60
   percent_daily_coverage_valid_sensor: 30
   exclude_invalid_sensors: true

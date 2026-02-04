@@ -73,11 +73,14 @@ def Flag_City(x):
     if x['year_median_active_sensors_per_city_parameter'] >= config["flags"]["sensors_active_per_day_high_flag"] and x['percent_days_avaiable_per_city_year'] >= config["flags"]["percent_days_avaiable_high_flag"]:
         flag = "High"
 
-    elif x['year_median_active_sensors_per_city_parameter'] >= config["flags"]["sensors_active_per_day_medium_flag"] or x['percent_days_avaiable_per_city_year'] >= config["flags"]["percent_days_avaiable_medium_flag"]:
+    elif x['year_median_active_sensors_per_city_parameter'] >= config["flags"]["sensors_active_per_day_medium_flag"] and x['percent_days_avaiable_per_city_year'] >= config["flags"]["percent_days_avaiable_medium_flag"]:
         flag = "Medium"
 
-    else:
+    elif x['year_median_active_sensors_per_city_parameter'] >= config["flags"]["sensors_active_per_day_low_flag"] or x['percent_days_avaiable_per_city_year'] >= config["flags"]["percent_days_avaiable_low_flag"]:
         flag = "Low"
+
+    else:
+        flag = "Very Low"
 
     return flag
 

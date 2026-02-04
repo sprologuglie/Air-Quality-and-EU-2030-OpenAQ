@@ -23,7 +23,7 @@ def Coordinates(locations): # First we retieve the coordinates for our locations
 
     for l in locations:
         print(f"Fetching coordinates of {l}")
-        geolocator = Nominatim(user_agent="Air_quality_and_2030_compliance")                       # Using Nominatim API
+        geolocator = Nominatim(user_agent="Air_quality_and_EU_tresholds")                       # Using Nominatim API
         location = geolocator.geocode(l, language='it')                                 # Fetching geolocation data
         coordinates.append((location.latitude, location.longitude, l))                  # Append to coordinates list
         print(f"The coordinates of {l} are {location.latitude}, {location.longitude}")

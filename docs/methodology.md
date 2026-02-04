@@ -13,7 +13,12 @@
 - Pollutants (NO₂, O₃, PM₁₀, PM₂.₅)
   Four pollutants were chosen for these analysis: NO2, O3, PM10 and PM2.5. They were chosen for they are among the most measured and policy relevant. Future developements may include all the regulated pollutants
 - Why these pollutants are policy-relevant
-  ...........................................................................:ADD:........................................................................
+  Their monitoring is crucial for two main reasons:
+  1. Public Health Impact:
+  - Particulate Matter (PM10 and PM2.5): These particles can penetrate deep into the lungs and even enter the bloodstream, causing respiratory and cardiovascular diseases. Reducing their concentration is a primary target for public health policies to reduce premature mortality.
+  - Nitrogen Dioxide (NO2): A toxic gas primarily emitted by road transport (diesel engines). It is a major trigger for asthma and reduced lung function in children.
+  - Ozone (O3): Unlike others, it is a secondary pollutant formed by chemical reactions. It is a powerful oxidant that causes respiratory distress and is a significant focus for summer smog alerts.
+  2. Monitoring these pollutants helps evaluate the effectiveness of "green" transitions. For example, No2 levels are a direct proxy for the success of electric mobility transitions, while Ozone levels are closely linked to rising global temperatures and climate change. Moreover, these pollutants affects vegetation and animals life along with humans.
 
 ## 3. Data retrieval
 
@@ -51,17 +56,16 @@
 ## 5. Data quality rules
 - Definition of a **"valid day"**
   - Valid days are computed separately for each sensor. A valid day is covered for at least 50% for a given sensor. Invalid days are excluded from all analyses. This parameter are in `config.yml` under "percent_coverage_valid_day".
-- Definition of a **valid year**
-  - Valid years are computed for each city
 - Definition of a **“valid sensor”**
   - A valid sensor has: at least 30% mean daily coverage and at least 60% mean yearly coverage. Invalid sensors are excluded. These parameters are in `config.yml` under "percent_daily_coverage_valid_sensor" and "percent_coverage_valid_sensor" respectively.
 - Definition of cities' **“flag”**
   - Each city, year, parameter is flagged with a quality based criterium.
-  - Confidence labels (High/Medium/Low):
-  **High**    -->     >= 80 days avaiable     --AND--     >= 3 median active sensors per day <br>
-  **Medium**  -->     >= 60 days avaiable     --OR---     >= 2 median active sensors per day <br>
-  **Low**     -->      < 60 days avaiable     --AND--      < 2 median active sensors per day <br>
-  Such values are in `config.yml` under "sensors_active_per_day_high_flag", "percent_days_avaiable_high_flag", "sensors_active_per_day_medium_flag" and "percent_days_avaiable_medium_flag"
+  - Confidence labels (High/Medium/Low/Very Low):
+**High**     -->     >= 80 days avaiable     --AND--     >= 3 median active sensors per day <br>
+**Medium**   -->     >= 70 days avaiable     --AND--     >= 2 median active sensors per day <br>
+**Low**      -->     >= 60 days avaiable     --AND--     >= 2 median active sensors per day <br>
+**Very Low** -->     <  60 days avaiable     ---OR--      < 2 median active sensors per day <br>
+  Such values are in `config.yml` under "sensors_active_per_day_high_flag", "percent_days_avaiable_high_flag", "sensors_active_per_day_medium_flag",  "percent_days_avaiable_medium_flag", "sensors_active_per_day_low_flag" and  "percent_days_avaiable_low_flag"
 
 ## 6. Aggregation strategy
 For each pollutant, after cleaning and quality checks, the pipeline computes several daily and seasonal aggregates, stored as columns in the processed dataframe. The pipeline computes
@@ -87,10 +91,12 @@ For each pollutant, after cleaning and quality checks, the pipeline computes sev
     - Measurements were aggregated starting from hourly values retrieved through the OpenAQ API. First, sensors data were aggregated forming a daily mean for each sensor. Then, sensors daily aggregate were averaged to get a daily mean. Finally, daily measures were again averaged to get a yearly average.
   - Rationale and known biases
     - The choice of using mean values were done to be consistent with european indications. Moreover, using the median daily value (computed by doing the median daily value for each station and taking the median value again) seem to be not significantly different for yearly means (see `notebooks/turin_deep_dive.ipynb`). 
-    - There are some known biases in using this method :::::::::::::::::::::::::::::::::::::::::::::ADD::::::::::::::::::::::::::::::::::::::::::::::::::::
+    - There are some known biases in using this method which does not account for population exposure, for episodic peaks, for city areas differences, traffic/background differences and more. Nonetheless, it was chosen as appropiate for the objective
 
 - Exceedance days
-- Notes on compliance vs “exceedance days” (what you claim vs what you don’t claim)
+  Excedance days are simply the number of days for which the daily mean (or MDA8 for O3) is > than the corresponding threshold
+
+- There are many limitations in this assessment of compliance (see ##12. Limitations and ethical notes)
 
 ## 8. Threshold sets
 
@@ -108,7 +114,10 @@ For each pollutant, after cleaning and quality checks, the pipeline computes sev
 
 ## 9. CAQI
 - Mapping from pollutant metrics to CAQI categories
+   - CAQI breakpoint were taken from this study: https://web.archive.org/web/20160222064802/http://www.airqualitynow.eu/download/CITEAIR-Comparing_Urban_Air_Quality_across_Borders.pdf
+   Coherently with the study, the daily max value was used for NO2 and O3, while the daily mean value for PM10 and PM2.5
 - Assumptions and caveats
+  - Naturally, data are completely insufficient for a robust assessment of general air quality. In the supplementary reports the CAQI was nonetheless included as an exploration for comparing general air quality (across parameters) between cities.
 
 ## 10. Outputs
 - Output folders:
@@ -126,8 +135,59 @@ For each pollutant, after cleaning and quality checks, the pipeline computes sev
       deepdive/
       figures/
 
-- Produced datasets (schema for daily and yearly tables)
-- Produced figures/tables (filenames + meaning)
+- Produced tables:
+  - data/raw/
+    - **Raw Data** --> Collections of raw measurements data ->  `data/raw/raw_data.csv`
+    - **Failed** --> Collection of pages for which Errors happened and measurements were not collected -> `data/raw/failed.csv`
+    - **Sensors** --> Dataset of sensors found by the OpenAQ API -> `data/raw/sensors.csv`
+
+  - data/processed/
+    - **Clean Data** --> Dataset of hourly measurements after the cleaning process -> `data/processed/clean.csv`
+    - **Daily Data** --> Dataset for daily aggregates after cleaning -> `data/processed/daily_data.csv`
+
+  - data/descriptive/
+    - **Pre Cleaning Descriptive** --> Descriptive statistics of raw measurements data for each sensor -> `data/descriptive/pre_cleaning_descriptive.csv`
+    - **Processed Descriptive** --> Descriptive statistics of measurements data after cleaning for each sensor -> `data/descriptive/pre_cleaning_descriptive.csv`
+    - **Sensors Metadata** --> Polished dataset with used sensors metadata -> `data/descriptive/sensors_metadata.csv`
+
+  - results/quality_checks
+    - **Cities Quality** --> Dataframe containing quality assessment of each city, parameter, year ->  `results/quality_chekcs/cities_quality.csv`
+    - **Sensors Quality** --> Dataframe containing quality assessment of each sensor, parameter, year ->  `results/quality_chekcs/sensors_quality.csv`
+
+  - results/quality_checks/deepdive
+    - **Torino Aggregation** --> Dataframe confronting different aggregation methods for calculating annual aggregates for the city of Turin -> `results/quality_chekcs/deepdive/Torino_aggregation.csv`
+    - **Torino Annual Mean Per Sensor** --> Dataframe containing annual mean aggregates for each sensor in Turin -> `results/quality_chekcs/deepdive/Torino_annual_mean_per_station_descriptive.csv`
+    - **Torino Exceedance Days Per Sensor** --> Dataframe calculating exceedance days for each sensor in Turin -> `results/quality_chekcs/deepdive/Torino_exceedance_days_per_station_descriptive.csv`
+
+  - results/
+    - **Compliance table** --> Table which compare annual averages and exeedance days with EU cuurent standards and 2030 targets -> `results/compliance_table.csv`
+
+- Produced figures:
+  results/
+    plots/
+      CAQI/
+        - CAQI_per_parameter/ 
+          - `CAQI_*.png` --> Collection of daily CAQI plots for each parameter separately
+        - `CAQI_global.png` --> Daily global CAQI for each city
+        - `count_CAQI.png` --> Count plot for each CAQI category per city
+      density_plots/ 
+        - `daily_averages_densityplot_*.png` --> Collection of desity plots for each city, divided per parameter
+      main/
+        - `compliance_days_*.png` --> Plots with exceedance days for each city, divided per parameter
+        - `trends_annual_*.png` --> Plots with annual means for each city, divided per parameter
+        - `daily_averages_boxplot.png` --> Boxplot with distribution of daily averages for each city and parameter
+      seasonal_trends/ 
+        - `seasonal_trends_*.png` --> Collection of seasonal average values for each city, divided per parameter
+    quality_checks/
+      deepdive/
+        - `Torino_active_sensors_per_day.png` --> Lineplot for active sensors in Torino for each day and parameter
+        - `Torino_percent_days_avaiable_per_year.png` --> Barplot with percent days avaiable for each year
+        - `Torino_sensors_percent_coverage_per_day.png` --> ECDF for percent coverage of Torino's sensors for each year and parameter
+        - `Torino_sensors_percent_coverage_per_year.png` --> Barplot for percent coverage of Torino's sensors for each year and parameter
+      figures/
+        -`days_avaiable_heatmap.png` --> heatmap of percent days avaiable for each city, year and parameter
+        - `median_active_sensors_heatmap.png` --> heatmap of median active sensors for each city, year and parameter
+
 
 ## 11. Reproducibility
 - Configuration (config.yml) parameters:
@@ -190,3 +250,4 @@ For each pollutant, after cleaning and quality checks, the pipeline computes sev
 - Coverage varies across cities, pollutants, and years; quality flags should be used to qualify interpretations.
 - Some completeness calculations assume 365 days and 24 hours; leap years and DST can slightly affect percentages.
 - Threshold-based labels are only as correct as the threshold definitions implemented in the repository.
+- EU quality standards for assessing policy compliance are much more rigid than what this anaysis can implement. Therefore, results have to be taken as exploratory rather than evaluative

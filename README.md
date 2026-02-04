@@ -3,11 +3,14 @@
 ### (Work in progress)
 
 A reproducible data pipeline and analysis of four major EU-regulated air pollutants (NO₂, O₃, PM₁₀, PM₂.₅) using OpenAQ data.
-The project compares city-level air quality against current EU standards and stricter 2030 targets, and includes a deep-dive on Turin to demonstrate station-level heterogeneity and robustness to aggregation choices.
+The project compares city-level air quality against current EU standards and stricter 2030 targets, and includes a deep-dive on Turin to demonstrate station-level heterogeneity and robustness to aggregation choices.<br>
+
+**NB  EU quality standards for assessing policy compliance are much more rigid than what this anaysis can implement. Therefore, results have to be taken as exploratory rather than evaluative**
 
 ## Why this project
 Urban air pollution is a high-impact, policy-relevant topic touching public health, environmental justice, and sustainable cities. EU has recently approved stricter targets to be met within January 1st 2030 (https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402881#anx_I) togheter additional regulations regarding pm2.5 and other pollutants. It is therefore important, as european citizens and organizations, to confront our cities air quality with such stricter standards, in order to propose and discuss data-based environmental policies, which can improve our life quality. <br>
-This repository aims to produce **transparent**, **reproducible**, and **quality-aware** indicators that can support evidence-based discussion.
+
+This repository aims to produce **transparent**, **reproducible**, and **quality-aware** indicators that can support evidence-based discussion. 
 
 ## Research questions
 1. How far are major Italian cities from current EU thresholds and future 2030 targets for NO₂, O₃, PM₁₀, and PM₂.₅?

@@ -389,7 +389,6 @@ def Make_Plots():
 
 
     # ANNUAL MEAN
-    df['annual_mean'] = df.groupby(['year', 'city', 'parameter'])['day_mean_value'].transform('mean')
     
     for parameter in config['parameters']:
         if parameter != "o3 µg/m³":
@@ -406,7 +405,7 @@ def Make_Plots():
             col_wrap=3,
             kind="bar", 
             palette="Blues",
-            hue_order=['Low', 'Medium', 'High'],
+            hue_order=['Very Low', 'Low', 'Medium', 'High'],
             edgecolor="black")
             for ax in g.axes.flat:
                 ax.axhline(config['new_standards_year'][parameter], color='black', linestyle='--', linewidth=1.5, zorder=2)
@@ -439,7 +438,7 @@ def Make_Plots():
             col_wrap=3, 
             kind="bar",
             palette="Blues",
-            hue_order=['Low', 'Medium', 'High'],
+            hue_order=['Very Low', 'Low', 'Medium', 'High'],
             edgecolor="black")
         
         for ax in g.axes.flat:
