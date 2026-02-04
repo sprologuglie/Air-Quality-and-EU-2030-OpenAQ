@@ -1,0 +1,71 @@
+pipeline:
+  retry_failed: true
+  do_fetch: false
+  do_clean: true
+  do_results: true
+
+locations:
+  - Torino
+  - Milano
+  - Firenze
+  - Roma
+  - Napoli
+  - Palermo
+
+parameters: 
+  - "no2 µg/m³"
+  - "o3 µg/m³"
+  - "pm10 µg/m³"
+  - "pm25 µg/m³"
+
+yearfrom: 2021
+yearto: 2025
+
+openaq:
+  mobile: false
+  monitor: true
+  radius: 12000
+  max_attempts: 6
+
+implausible_value_caps:
+  "no2 µg/m³": 500
+  "o3 µg/m³": 450
+  "pm10 µg/m³": 500
+  "pm25 µg/m³": 350
+
+flags:
+  sensors_active_per_day_high_flag: 3
+  percent_days_avaiable_high_flag: 80
+  sensors_active_per_day_medium_flag: 2
+  percent_days_avaiable_medium_flag: 60
+  percent_coverage_valid_sensor: 60
+  percent_daily_coverage_valid_sensor: 30
+  exclude_invalid_sensors: true
+  percent_coverage_valid_day: 50
+  exclude_invalid_days: true
+
+new_standards_year:
+ 'pm25 µg/m³': 10 
+ 'pm10 µg/m³': 20 
+ 'no2 µg/m³': 20
+
+current_standards_year:
+  'pm25 µg/m³': 25
+  'pm10 µg/m³': 40
+  'no2 µg/m³': 40
+
+new_standards_day:
+  'pm25 µg/m³' : 25
+  'pm10 µg/m³': 45
+  'no2 µg/m³': 50
+  'o3 µg/m³': 120
+
+CAQI_breakpoints:
+  'pm25 µg/m³': [10, 20, 25, 50, 75] 
+  'pm10 µg/m³': [20, 40, 50, 100, 150]
+  'no2 µg/m³': [40, 90, 120, 230, 340]
+  'o3 µg/m³': [50, 100, 130, 240, 380]
+
+
+quality_deep_locations:
+  - Torino

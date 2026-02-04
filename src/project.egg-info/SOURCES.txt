@@ -1,0 +1,12 @@
+LICENCE.md
+README.md
+pyproject.toml
+src/project/__init__.py
+src/project/fetch.py
+src/project/pipeline.py
+src/project/processing.py
+src/project/results.py
+src/project.egg-info/PKG-INFO
+src/project.egg-info/SOURCES.txt
+src/project.egg-info/dependency_links.txt
+src/project.egg-info/top_level.txt

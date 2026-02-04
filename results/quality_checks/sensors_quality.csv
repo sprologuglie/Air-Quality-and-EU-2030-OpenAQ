@@ -1,0 +1,501 @@
+year,city,parameter,station_name,sensor_id,mean_sensor_percent_coverage_per_day,sensors_percent_coverage_per_year,valid_sensor
+2021,Firenze,no2 µg/m³,FI-BASSI,24526,87.37,86.85,True
+2021,Firenze,no2 µg/m³,FI-MOSSE,24528,88.19,90.41,True
+2021,Firenze,no2 µg/m³,FI-SCANDICCI,24392,87.46,90.14,True
+2021,Firenze,no2 µg/m³,FI-SETTIGNANO,23963,87.0,88.22,True
+2021,Firenze,o3 µg/m³,FI-SETTIGNANO,23964,87.67,89.59,True
+2021,Milano,no2 µg/m³,LIMITO,24264,91.98,88.49,True
+2021,Milano,no2 µg/m³,MILANO - SENATO,24161,91.9,83.56,True
+2021,Milano,no2 µg/m³,MILANO - V.LE MARCHE,24282,91.61,87.12,True
+2021,Milano,no2 µg/m³,MILANO - VERZIERE,24266,91.15,85.21,True
+2021,Milano,no2 µg/m³,MILANO PASCAL CITT� STUDI,24273,91.28,87.95,True
+2021,Milano,no2 µg/m³,S. GIULIANO,24090,90.89,81.37,True
+2021,Milano,no2 µg/m³,SESTO S.GIOVANNI,24280,91.85,89.04,True
+2021,Milano,o3 µg/m³,LIMITO,24263,87.2,87.12,True
+2021,Milano,o3 µg/m³,MILANO PASCAL CITT� STUDI,24272,89.74,89.04,True
+2021,Napoli,no2 µg/m³,IT0898A,24969,86.78,90.14,True
+2021,Napoli,no2 µg/m³,IT1495A,24984,86.75,90.14,True
+2021,Napoli,no2 µg/m³,IT1496A,24414,90.78,90.68,True
+2021,Napoli,no2 µg/m³,IT1497A,24412,86.29,91.23,True
+2021,Napoli,no2 µg/m³,NA07 ENTE FERROVIE,24979,89.53,90.68,True
+2021,Napoli,no2 µg/m³,NA09 I.T.I.S. ARGINE,24982,86.72,90.14,True
+2021,Napoli,o3 µg/m³,IT1497A,24411,86.37,91.23,True
+2021,Napoli,pm10 µg/m³,IT0898A,24512,89.91,90.96,True
+2021,Napoli,pm10 µg/m³,NA07 ENTE FERROVIE,24417,90.69,90.68,True
+2021,Napoli,pm10 µg/m³,NA09 I.T.I.S. ARGINE,24416,90.64,90.68,True
+2021,Napoli,pm25 µg/m³,IT0898A,24511,89.88,90.96,True
+2021,Napoli,pm25 µg/m³,NA09 I.T.I.S. ARGINE,24415,90.64,90.68,True
+2021,Roma,no2 µg/m³,ARENULA,21941,86.6,13.97,False
+2021,Roma,no2 µg/m³,BUFALOTTA,21912,85.63,13.42,False
+2021,Roma,no2 µg/m³,C.SO FRANCIA,21874,86.6,13.97,False
+2021,Roma,no2 µg/m³,CIPRO,21903,86.55,13.97,False
+2021,Roma,no2 µg/m³,CIPRO,24843,87.56,86.03,True
+2021,Roma,no2 µg/m³,Fermi,21864,86.23,84.93,True
+2021,Roma,no2 µg/m³,IT1176A,24474,86.27,84.93,True
+2021,Roma,no2 µg/m³,IT1835A,24845,87.52,78.63,True
+2021,Roma,no2 µg/m³,IT1906A,24804,85.6,81.64,True
+2021,Roma,no2 µg/m³,IT2012A,24778,86.48,85.48,True
+2021,Roma,no2 µg/m³,L.GO MAGNA GRECIA,21915,84.98,85.75,True
+2021,Roma,no2 µg/m³,L.GO PERESTRELLO,21885,86.56,13.97,False
+2021,Roma,no2 µg/m³,Malagrotta,21948,85.56,13.97,False
+2021,Roma,no2 µg/m³,TIBURTINA,21866,86.59,86.85,True
+2021,Roma,no2 µg/m³,VILLA ADA,21950,86.62,87.67,True
+2021,Roma,o3 µg/m³,ARENULA,21947,90.11,13.97,False
+2021,Roma,o3 µg/m³,BUFALOTTA,21913,89.9,13.42,False
+2021,Roma,o3 µg/m³,CIPRO,21914,90.11,13.97,False
+2021,Roma,o3 µg/m³,CIPRO,24842,91.62,86.03,True
+2021,Roma,o3 µg/m³,IT1176A,24473,88.69,85.48,True
+2021,Roma,o3 µg/m³,IT1835A,24844,90.01,84.66,True
+2021,Roma,o3 µg/m³,IT1906A,24803,90.97,85.21,True
+2021,Roma,o3 µg/m³,IT2012A,24777,91.02,85.75,True
+2021,Roma,o3 µg/m³,L.GO PERESTRELLO,21925,90.07,13.97,False
+2021,Roma,o3 µg/m³,Malagrotta,21942,87.36,13.42,False
+2021,Roma,o3 µg/m³,VILLA ADA,21870,86.86,87.67,True
+2021,Roma,pm10 µg/m³,ARENULA,21807,4.17,9.04,False
+2021,Roma,pm10 µg/m³,BUFALOTTA,21831,4.17,8.77,False
+2021,Roma,pm10 µg/m³,C.SO FRANCIA,21808,4.17,9.04,False
+2021,Roma,pm10 µg/m³,CIPRO,21856,4.17,9.04,False
+2021,Roma,pm10 µg/m³,Fermi,21814,4.17,9.04,False
+2021,Roma,pm10 µg/m³,L.GO MAGNA GRECIA,21804,4.17,8.22,False
+2021,Roma,pm10 µg/m³,L.GO PERESTRELLO,21860,4.17,9.04,False
+2021,Roma,pm10 µg/m³,Malagrotta,21818,4.17,9.04,False
+2021,Roma,pm10 µg/m³,TIBURTINA,21855,4.17,9.04,False
+2021,Roma,pm10 µg/m³,VILLA ADA,21820,4.17,9.04,False
+2021,Roma,pm25 µg/m³,ARENULA,21806,4.17,9.04,False
+2021,Roma,pm25 µg/m³,C.SO FRANCIA,21846,4.17,9.04,False
+2021,Roma,pm25 µg/m³,CIPRO,21857,4.17,8.77,False
+2021,Roma,pm25 µg/m³,Malagrotta,21830,4.17,9.04,False
+2021,Roma,pm25 µg/m³,VILLA ADA,21841,4.17,9.04,False
+2021,Torino,no2 µg/m³,Borgaro T. - Caduti,24477,91.51,89.04,True
+2021,Torino,no2 µg/m³,Settimo T. - Vivaldi,24475,91.53,89.59,True
+2021,Torino,no2 µg/m³,Torino - Consolata,24555,90.32,89.32,True
+2021,Torino,no2 µg/m³,Torino - Rebaudengo,24552,91.51,89.59,True
+2021,Torino,no2 µg/m³,Torino - Rubino,24821,90.16,88.77,True
+2021,Torino,o3 µg/m³,Borgaro T. - Caduti,24476,91.5,86.03,True
+2021,Torino,o3 µg/m³,Torino - Rubino,24820,90.38,85.48,True
+2022,Firenze,no2 µg/m³,FI-BASSI,24526,88.97,85.21,True
+2022,Firenze,no2 µg/m³,FI-GRAMSCI,5078863,4.17,0.27,False
+2022,Firenze,no2 µg/m³,FI-MOSSE,24528,90.4,91.23,True
+2022,Firenze,no2 µg/m³,FI-SCANDICCI,24392,91.68,93.97,True
+2022,Firenze,no2 µg/m³,FI-SETTIGNANO,23963,90.28,86.03,True
+2022,Firenze,o3 µg/m³,FI-SETTIGNANO,23964,91.26,91.51,True
+2022,Milano,no2 µg/m³,LIMITO,24264,94.35,17.81,False
+2022,Milano,no2 µg/m³,MILANO - SENATO,24161,94.25,17.81,False
+2022,Milano,no2 µg/m³,MILANO - V.LE MARCHE,24282,93.98,17.81,False
+2022,Milano,no2 µg/m³,MILANO - VERZIERE,24266,93.98,17.81,False
+2022,Milano,no2 µg/m³,MILANO PASCAL CITT� STUDI,24273,92.93,17.81,False
+2022,Milano,no2 µg/m³,S. GIULIANO,24090,94.99,17.81,False
+2022,Milano,no2 µg/m³,SESTO S.GIOVANNI,24280,94.09,17.81,False
+2022,Milano,o3 µg/m³,LIMITO,24263,87.83,16.71,False
+2022,Milano,o3 µg/m³,MILANO PASCAL CITT� STUDI,24272,93.61,17.81,False
+2022,Napoli,no2 µg/m³,IT0898A,24969,89.39,56.99,False
+2022,Napoli,no2 µg/m³,IT1495A,24984,89.8,57.81,False
+2022,Napoli,no2 µg/m³,IT1496A,24414,93.03,57.53,False
+2022,Napoli,no2 µg/m³,IT1497A,24412,89.35,58.08,False
+2022,Napoli,no2 µg/m³,NA07 ENTE FERROVIE,24979,94.06,56.99,False
+2022,Napoli,no2 µg/m³,NA09 I.T.I.S. ARGINE,24982,89.84,57.81,False
+2022,Napoli,o3 µg/m³,IT1497A,24411,89.36,58.08,False
+2022,Napoli,pm10 µg/m³,IT0898A,24512,91.68,55.62,False
+2022,Napoli,pm10 µg/m³,NA07 ENTE FERROVIE,24417,93.74,56.44,False
+2022,Napoli,pm10 µg/m³,NA09 I.T.I.S. ARGINE,24416,93.73,58.08,False
+2022,Napoli,pm25 µg/m³,IT0898A,24511,92.11,55.62,False
+2022,Napoli,pm25 µg/m³,NA09 I.T.I.S. ARGINE,24415,94.11,58.08,False
+2022,Roma,no2 µg/m³,ARENULA,21941,71.55,91.78,True
+2022,Roma,no2 µg/m³,BUFALOTTA,21912,71.77,89.04,True
+2022,Roma,no2 µg/m³,C.SO FRANCIA,21874,71.23,91.78,True
+2022,Roma,no2 µg/m³,CINECITTA,5078320,95.83,0.82,False
+2022,Roma,no2 µg/m³,CIPRO,21903,72.02,92.33,True
+2022,Roma,no2 µg/m³,CIPRO,24843,91.41,94.52,True
+2022,Roma,no2 µg/m³,Fermi,21864,86.02,95.34,True
+2022,Roma,no2 µg/m³,IT0825A,5078901,4.17,0.27,False
+2022,Roma,no2 µg/m³,IT1176A,24474,89.92,93.15,True
+2022,Roma,no2 µg/m³,IT1835A,24845,87.22,91.51,True
+2022,Roma,no2 µg/m³,IT1906A,24804,85.13,70.68,True
+2022,Roma,no2 µg/m³,IT2012A,24778,81.73,93.97,True
+2022,Roma,no2 µg/m³,L.GO MAGNA GRECIA,21915,88.22,96.99,True
+2022,Roma,no2 µg/m³,L.GO PERESTRELLO,21885,71.27,92.05,True
+2022,Roma,no2 µg/m³,Malagrotta,21948,71.41,92.33,True
+2022,Roma,no2 µg/m³,TIBURTINA,21866,92.25,98.63,True
+2022,Roma,no2 µg/m³,VILLA ADA,21950,94.17,98.9,True
+2022,Roma,no2 µg/m³,VILLA ADA,7775133,4.17,0.27,False
+2022,Roma,o3 µg/m³,ARENULA,21947,73.36,92.05,True
+2022,Roma,o3 µg/m³,BUFALOTTA,21913,74.29,91.78,True
+2022,Roma,o3 µg/m³,CINECITTA,5078374,94.61,0.82,False
+2022,Roma,o3 µg/m³,CIPRO,21914,73.74,90.96,True
+2022,Roma,o3 µg/m³,CIPRO,24842,95.11,93.97,True
+2022,Roma,o3 µg/m³,IT1176A,24473,89.62,93.97,True
+2022,Roma,o3 µg/m³,IT1835A,24844,87.69,93.42,True
+2022,Roma,o3 µg/m³,IT1906A,24803,84.53,93.7,True
+2022,Roma,o3 µg/m³,IT2012A,24777,85.72,94.52,True
+2022,Roma,o3 µg/m³,L.GO PERESTRELLO,21925,73.92,92.05,True
+2022,Roma,o3 µg/m³,Malagrotta,21942,73.87,90.68,True
+2022,Roma,o3 µg/m³,VILLA ADA,21870,94.11,98.63,True
+2022,Roma,o3 µg/m³,VILLA ADA,7774928,4.17,0.27,False
+2022,Roma,pm10 µg/m³,ARENULA,21807,4.17,25.21,False
+2022,Roma,pm10 µg/m³,BUFALOTTA,21831,4.17,23.56,False
+2022,Roma,pm10 µg/m³,C.SO FRANCIA,21808,4.17,24.66,False
+2022,Roma,pm10 µg/m³,CINECITTA,5079457,4.17,0.82,False
+2022,Roma,pm10 µg/m³,CIPRO,21856,4.17,24.11,False
+2022,Roma,pm10 µg/m³,Fermi,21814,4.17,24.93,False
+2022,Roma,pm10 µg/m³,L.GO MAGNA GRECIA,21804,4.17,25.21,False
+2022,Roma,pm10 µg/m³,L.GO PERESTRELLO,21860,4.17,24.66,False
+2022,Roma,pm10 µg/m³,Malagrotta,21818,4.17,25.21,False
+2022,Roma,pm10 µg/m³,TIBURTINA,21855,4.17,25.21,False
+2022,Roma,pm10 µg/m³,VILLA ADA,21820,4.17,25.21,False
+2022,Roma,pm25 µg/m³,ARENULA,21806,4.17,25.21,False
+2022,Roma,pm25 µg/m³,C.SO FRANCIA,21846,4.17,23.84,False
+2022,Roma,pm25 µg/m³,CINECITTA,5079458,4.17,0.82,False
+2022,Roma,pm25 µg/m³,CIPRO,21857,4.17,23.84,False
+2022,Roma,pm25 µg/m³,Malagrotta,21830,4.17,25.21,False
+2022,Roma,pm25 µg/m³,VILLA ADA,21841,4.17,24.66,False
+2022,Torino,no2 µg/m³,Borgaro T. - Caduti,24477,94.11,89.59,True
+2022,Torino,no2 µg/m³,Settimo T. - Vivaldi,24475,94.77,94.79,True
+2022,Torino,no2 µg/m³,Torino - Consolata,24555,93.62,93.15,True
+2022,Torino,no2 µg/m³,Torino - Rebaudengo,24552,95.87,94.52,True
+2022,Torino,no2 µg/m³,Torino - Rubino,24821,94.46,93.97,True
+2022,Torino,o3 µg/m³,Borgaro T. - Caduti,24476,94.15,85.75,True
+2022,Torino,o3 µg/m³,Torino - Rubino,24820,94.21,89.86,True
+2022,Torino,pm10 µg/m³,Torino - Rubino,1764647,91.32,63.84,True
+2022,Torino,pm25 µg/m³,Torino - Rubino,1702604,90.65,72.88,True
+2023,Firenze,no2 µg/m³,FI-BASSI,24526,91.36,81.1,True
+2023,Firenze,no2 µg/m³,FI-GRAMSCI,5078863,91.75,61.1,True
+2023,Firenze,no2 µg/m³,FI-MOSSE,24528,92.42,80.55,True
+2023,Firenze,no2 µg/m³,FI-SCANDICCI,24392,91.95,53.15,False
+2023,Firenze,no2 µg/m³,FI-SETTIGNANO,23963,91.3,80.82,True
+2023,Firenze,o3 µg/m³,FI-SETTIGNANO,23964,91.66,80.82,True
+2023,Firenze,pm10 µg/m³,FI-BASSI,5078269,99.42,58.63,False
+2023,Firenze,pm10 µg/m³,FI-BOBOLI,5078739,99.49,61.1,True
+2023,Firenze,pm10 µg/m³,FI-GRAMSCI,5079209,98.98,60.55,True
+2023,Firenze,pm10 µg/m³,FI-MOSSE,5078299,99.1,60.0,True
+2023,Firenze,pm10 µg/m³,FI-SCANDICCI,5079211,99.24,58.36,False
+2023,Firenze,pm25 µg/m³,FI-BASSI,5078287,99.42,58.63,False
+2023,Firenze,pm25 µg/m³,FI-GRAMSCI,5079210,98.98,60.55,True
+2023,Napoli,no2 µg/m³,IT0898A,24969,91.43,74.52,True
+2023,Napoli,no2 µg/m³,IT1495A,24984,91.51,75.07,True
+2023,Napoli,no2 µg/m³,IT1496A,24414,95.62,73.15,True
+2023,Napoli,no2 µg/m³,IT1497A,24412,90.76,74.25,True
+2023,Napoli,no2 µg/m³,NA07 ENTE FERROVIE,24979,92.94,75.07,True
+2023,Napoli,no2 µg/m³,NA09 I.T.I.S. ARGINE,24982,91.52,75.07,True
+2023,Napoli,o3 µg/m³,IT1497A,24411,91.49,74.52,True
+2023,Napoli,pm10 µg/m³,IT0898A,24512,95.44,74.79,True
+2023,Napoli,pm10 µg/m³,NA07 ENTE FERROVIE,24417,95.09,74.52,True
+2023,Napoli,pm10 µg/m³,NA09 I.T.I.S. ARGINE,24416,95.56,74.25,True
+2023,Napoli,pm25 µg/m³,IT0898A,24511,95.45,74.79,True
+2023,Napoli,pm25 µg/m³,NA09 I.T.I.S. ARGINE,24415,95.34,74.79,True
+2023,Roma,no2 µg/m³,ARENULA,21941,95.25,84.38,True
+2023,Roma,no2 µg/m³,BUFALOTTA,21912,92.7,82.19,True
+2023,Roma,no2 µg/m³,C.SO FRANCIA,21874,96.42,84.93,True
+2023,Roma,no2 µg/m³,CINECITTA,5078320,96.54,65.75,True
+2023,Roma,no2 µg/m³,CIPRO,21903,95.14,85.21,True
+2023,Roma,no2 µg/m³,CIPRO,24843,92.78,80.27,True
+2023,Roma,no2 µg/m³,Fermi,21864,95.77,86.03,True
+2023,Roma,no2 µg/m³,IT0825A,5078901,94.31,61.92,True
+2023,Roma,no2 µg/m³,IT1176A,24474,91.92,80.0,True
+2023,Roma,no2 µg/m³,IT1835A,24845,87.02,78.9,True
+2023,Roma,no2 µg/m³,IT1906A,24804,91.22,80.27,True
+2023,Roma,no2 µg/m³,IT2012A,24778,90.19,79.73,True
+2023,Roma,no2 µg/m³,L.GO MAGNA GRECIA,21915,96.52,86.58,True
+2023,Roma,no2 µg/m³,L.GO PERESTRELLO,21885,95.0,84.11,True
+2023,Roma,no2 µg/m³,Malagrotta,21948,94.98,84.93,True
+2023,Roma,no2 µg/m³,TIBURTINA,21866,96.7,85.75,True
+2023,Roma,no2 µg/m³,VILLA ADA,21950,94.67,84.93,True
+2023,Roma,o3 µg/m³,ARENULA,21947,99.14,85.21,True
+2023,Roma,o3 µg/m³,BUFALOTTA,21913,98.98,83.84,True
+2023,Roma,o3 µg/m³,CINECITTA,5078374,99.14,65.48,True
+2023,Roma,o3 µg/m³,CIPRO,21914,99.13,84.93,True
+2023,Roma,o3 µg/m³,CIPRO,24842,96.68,80.27,True
+2023,Roma,o3 µg/m³,IT1176A,24473,95.24,79.45,True
+2023,Roma,o3 µg/m³,IT1835A,24844,89.04,78.9,True
+2023,Roma,o3 µg/m³,IT1906A,24803,93.57,80.0,True
+2023,Roma,o3 µg/m³,IT2012A,24777,93.81,80.55,True
+2023,Roma,o3 µg/m³,L.GO PERESTRELLO,21925,99.14,84.66,True
+2023,Roma,o3 µg/m³,Malagrotta,21942,98.52,84.66,True
+2023,Roma,o3 µg/m³,VILLA ADA,21870,96.35,85.21,True
+2023,Roma,pm10 µg/m³,ARENULA,21807,4.23,81.92,False
+2023,Roma,pm10 µg/m³,BUFALOTTA,21831,4.23,79.73,False
+2023,Roma,pm10 µg/m³,C.SO FRANCIA,21808,4.23,80.27,False
+2023,Roma,pm10 µg/m³,CINECITTA,5079457,4.24,64.11,False
+2023,Roma,pm10 µg/m³,CIPRO,21856,4.23,79.18,False
+2023,Roma,pm10 µg/m³,Fermi,21814,4.23,79.73,False
+2023,Roma,pm10 µg/m³,L.GO MAGNA GRECIA,21804,4.23,78.9,False
+2023,Roma,pm10 µg/m³,L.GO PERESTRELLO,21860,4.23,71.78,False
+2023,Roma,pm10 µg/m³,Malagrotta,21818,4.23,81.64,False
+2023,Roma,pm10 µg/m³,TIBURTINA,21855,4.23,76.71,False
+2023,Roma,pm10 µg/m³,VILLA ADA,21820,4.23,73.7,False
+2023,Roma,pm25 µg/m³,ARENULA,21806,4.23,80.55,False
+2023,Roma,pm25 µg/m³,C.SO FRANCIA,21846,4.23,79.73,False
+2023,Roma,pm25 µg/m³,CINECITTA,5079458,4.24,64.38,False
+2023,Roma,pm25 µg/m³,CIPRO,21857,4.23,78.63,False
+2023,Roma,pm25 µg/m³,Malagrotta,21830,4.23,81.64,False
+2023,Roma,pm25 µg/m³,VILLA ADA,21841,4.23,73.42,False
+2023,Torino,no2 µg/m³,Borgaro T. - Caduti,24477,96.21,81.92,True
+2023,Torino,no2 µg/m³,Settimo T. - Vivaldi,24475,96.29,79.45,True
+2023,Torino,no2 µg/m³,Torino - Consolata,24555,96.33,81.1,True
+2023,Torino,no2 µg/m³,Torino - Rebaudengo,24552,96.71,81.92,True
+2023,Torino,no2 µg/m³,Torino - Rubino,24821,96.49,81.92,True
+2023,Torino,o3 µg/m³,Borgaro T. - Caduti,24476,95.98,81.37,True
+2023,Torino,o3 µg/m³,Torino - Rubino,24820,96.24,78.9,True
+2023,Torino,pm10 µg/m³,Torino - Rubino,1764647,94.84,80.0,True
+2023,Torino,pm25 µg/m³,Torino - Rubino,1702604,92.65,80.27,True
+2024,Firenze,no2 µg/m³,FI-BASSI,24526,75.04,91.23,True
+2024,Firenze,no2 µg/m³,FI-GRAMSCI,5078863,74.22,91.23,True
+2024,Firenze,no2 µg/m³,FI-MOSSE,24528,76.66,92.05,True
+2024,Firenze,no2 µg/m³,FI-SCANDICCI,24392,76.43,92.33,True
+2024,Firenze,no2 µg/m³,FI-SETTIGNANO,23963,76.89,92.05,True
+2024,Firenze,o3 µg/m³,FI-SETTIGNANO,23964,76.88,92.33,True
+2024,Firenze,pm10 µg/m³,FI-BASSI,5078269,56.56,86.3,True
+2024,Firenze,pm10 µg/m³,FI-BOBOLI,5078739,58.48,87.67,True
+2024,Firenze,pm10 µg/m³,FI-GRAMSCI,5079209,55.18,88.49,True
+2024,Firenze,pm10 µg/m³,FI-MOSSE,5078299,58.96,87.4,True
+2024,Firenze,pm10 µg/m³,FI-SCANDICCI,5079211,57.77,85.75,True
+2024,Firenze,pm25 µg/m³,FI-BASSI,5078287,56.76,86.3,True
+2024,Firenze,pm25 µg/m³,FI-GRAMSCI,5079210,55.31,88.22,True
+2024,Milano,no2 µg/m³,CINISELLO B.,7773345,84.96,83.84,True
+2024,Milano,no2 µg/m³,Cormano-Edison,7774704,85.63,85.48,True
+2024,Milano,no2 µg/m³,LIMITO,24264,84.78,83.56,True
+2024,Milano,no2 µg/m³,MILANO - SENATO,24161,84.55,83.84,True
+2024,Milano,no2 µg/m³,MILANO - V.LE LIGURIA,7774184,82.77,82.74,True
+2024,Milano,no2 µg/m³,MILANO - V.LE MARCHE,24282,84.93,84.38,True
+2024,Milano,no2 µg/m³,MILANO - VERZIERE,24266,84.29,83.84,True
+2024,Milano,no2 µg/m³,MILANO PASCAL CITT� STUDI,24273,85.34,85.21,True
+2024,Milano,no2 µg/m³,S. GIULIANO,24090,85.24,84.38,True
+2024,Milano,no2 µg/m³,SESTO S.GIOVANNI,24280,86.4,84.66,True
+2024,Milano,o3 µg/m³,Cormano-Edison,7773586,85.58,84.38,True
+2024,Milano,o3 µg/m³,LIMITO,24263,85.43,84.66,True
+2024,Milano,o3 µg/m³,MILANO - VERZIERE,8613062,80.52,71.78,True
+2024,Milano,o3 µg/m³,MILANO PASCAL CITT� STUDI,24272,85.25,85.48,True
+2024,Milano,pm10 µg/m³,LIMITO,7775900,45.74,80.82,True
+2024,Milano,pm10 µg/m³,MILANO - SENATO,7773858,42.11,76.71,True
+2024,Milano,pm10 µg/m³,MILANO - V.LE MARCHE,7775924,85.36,85.75,True
+2024,Milano,pm10 µg/m³,MILANO - VERZIERE,7774070,80.14,78.08,True
+2024,Milano,pm10 µg/m³,MILANO PASCAL CITT� STUDI,7775985,42.16,78.63,True
+2024,Milano,pm25 µg/m³,MILANO - SENATO,7775178,49.48,44.38,False
+2024,Milano,pm25 µg/m³,MILANO - V.LE MARCHE,7774326,84.53,84.66,True
+2024,Milano,pm25 µg/m³,MILANO PASCAL CITT� STUDI,7773388,42.28,78.63,True
+2024,Milano,pm25 µg/m³,SESTO S.GIOVANNI,7774921,45.8,80.55,True
+2024,Napoli,no2 µg/m³,Casoria Scuola Palizzi (CAM),7775714,73.37,86.3,True
+2024,Napoli,no2 µg/m³,IT0898A,24969,90.54,7.12,False
+2024,Napoli,no2 µg/m³,IT1495A,24984,93.43,7.67,False
+2024,Napoli,no2 µg/m³,IT1496A,24414,98.21,7.67,False
+2024,Napoli,no2 µg/m³,IT1497A,24412,93.18,7.67,False
+2024,Napoli,no2 µg/m³,NA01 OSSERVATORIO ASTRONOMICO,7772823,76.08,77.26,True
+2024,Napoli,no2 µg/m³,NA02 OSPEDALE SANTOBONO,7773933,78.37,86.03,True
+2024,Napoli,no2 µg/m³,NA06 MUSEO NAZIONALE,7775341,74.12,85.75,True
+2024,Napoli,no2 µg/m³,NA07 ENTE FERROVIE,24979,77.34,93.15,True
+2024,Napoli,no2 µg/m³,NA08 OSPEDALE NUOVO PELLEGRINI,7773855,82.57,86.3,True
+2024,Napoli,no2 µg/m³,NA09 I.T.I.S. ARGINE,24982,77.39,93.15,True
+2024,Napoli,no2 µg/m³,Portici parco reggia,7773357,75.53,84.66,True
+2024,Napoli,no2 µg/m³,Tirrenopower Via Epomeo,7773712,72.59,85.75,True
+2024,Napoli,no2 µg/m³,Tirrenopower Volla,7774607,75.1,86.03,True
+2024,Napoli,o3 µg/m³,Casoria Scuola Palizzi (CAM),7774659,74.02,86.3,True
+2024,Napoli,o3 µg/m³,IT1497A,24411,95.97,7.67,False
+2024,Napoli,o3 µg/m³,NA01 OSSERVATORIO ASTRONOMICO,7775800,77.57,77.26,True
+2024,Napoli,o3 µg/m³,Portici parco reggia,7773362,75.13,85.48,True
+2024,Napoli,pm10 µg/m³,IT0898A,24512,94.24,6.85,False
+2024,Napoli,pm10 µg/m³,NA06 MUSEO NAZIONALE,7772966,71.12,85.21,True
+2024,Napoli,pm10 µg/m³,NA07 ENTE FERROVIE,24417,74.91,93.15,True
+2024,Napoli,pm10 µg/m³,NA09 I.T.I.S. ARGINE,24416,75.99,91.78,True
+2024,Napoli,pm10 µg/m³,Tirrenopower Via Epomeo,7773786,76.41,85.75,True
+2024,Napoli,pm10 µg/m³,Tirrenopower Volla,7775676,77.44,86.03,True
+2024,Napoli,pm25 µg/m³,IT0898A,24511,94.24,6.85,False
+2024,Napoli,pm25 µg/m³,NA06 MUSEO NAZIONALE,7774365,71.23,85.21,True
+2024,Napoli,pm25 µg/m³,NA09 I.T.I.S. ARGINE,24415,75.96,91.78,True
+2024,Napoli,pm25 µg/m³,Tirrenopower Via Epomeo,7774434,76.42,85.75,True
+2024,Napoli,pm25 µg/m³,Tirrenopower Volla,7774252,77.44,86.03,True
+2024,Palermo,no2 µg/m³,PA - Belgio,7773400,81.58,69.04,True
+2024,Palermo,no2 µg/m³,PA - Boccadifalco,7774599,77.18,78.63,True
+2024,Palermo,no2 µg/m³,PA - Castelnuovo,7772765,79.48,76.44,True
+2024,Palermo,no2 µg/m³,PA - Di Blasi,7775020,77.59,80.0,True
+2024,Palermo,no2 µg/m³,PA - Indipendenza,7774942,78.28,75.89,True
+2024,Palermo,no2 µg/m³,PA - UNIPA,7774078,75.48,78.36,True
+2024,Palermo,o3 µg/m³,PA - Boccadifalco,7775122,75.81,70.41,True
+2024,Palermo,o3 µg/m³,PA - UNIPA,7774017,77.89,80.0,True
+2024,Roma,no2 µg/m³,ARENULA,21941,97.65,81.37,True
+2024,Roma,no2 µg/m³,BUFALOTTA,21912,95.76,99.73,True
+2024,Roma,no2 µg/m³,C.SO FRANCIA,21874,96.18,100.27,True
+2024,Roma,no2 µg/m³,CINECITTA,5078320,94.86,98.63,True
+2024,Roma,no2 µg/m³,CIPRO,21903,96.9,97.53,True
+2024,Roma,no2 µg/m³,CIPRO,24843,96.95,100.27,True
+2024,Roma,no2 µg/m³,FERMI,7775770,79.55,84.38,True
+2024,Roma,no2 µg/m³,Fermi,21864,96.04,100.0,True
+2024,Roma,no2 µg/m³,IT0825A,5078901,94.3,7.95,False
+2024,Roma,no2 µg/m³,IT1176A,24474,93.08,7.95,False
+2024,Roma,no2 µg/m³,IT1835A,24845,91.23,7.95,False
+2024,Roma,no2 µg/m³,IT1906A,24804,94.92,7.95,False
+2024,Roma,no2 µg/m³,IT2012A,24778,90.16,7.95,False
+2024,Roma,no2 µg/m³,L.GO MAGNA GRECIA,21915,96.13,100.0,True
+2024,Roma,no2 µg/m³,L.GO PERESTRELLO,21885,97.04,100.27,True
+2024,Roma,no2 µg/m³,MALAGROTTA,7775677,75.47,85.48,True
+2024,Roma,no2 µg/m³,Malagrotta,21948,92.83,100.0,True
+2024,Roma,no2 µg/m³,TIBURTINA,21866,97.51,100.27,True
+2024,Roma,no2 µg/m³,VILLA ADA,21950,95.29,94.25,True
+2024,Roma,no2 µg/m³,VILLA ADA,7775133,94.73,87.12,True
+2024,Roma,o3 µg/m³,ARENULA,21947,99.38,100.0,True
+2024,Roma,o3 µg/m³,BUFALOTTA,21913,98.24,99.45,True
+2024,Roma,o3 µg/m³,CINECITTA,5078374,97.2,99.73,True
+2024,Roma,o3 µg/m³,CIPRO,21914,99.58,97.53,True
+2024,Roma,o3 µg/m³,CIPRO,24842,99.56,100.27,True
+2024,Roma,o3 µg/m³,IT1176A,24473,97.57,7.95,False
+2024,Roma,o3 µg/m³,IT1835A,24844,81.1,7.95,False
+2024,Roma,o3 µg/m³,IT1906A,24803,90.3,7.95,False
+2024,Roma,o3 µg/m³,IT2012A,24777,98.86,7.95,False
+2024,Roma,o3 µg/m³,L.GO PERESTRELLO,21925,99.46,100.27,True
+2024,Roma,o3 µg/m³,MALAGROTTA,7774738,83.15,85.48,True
+2024,Roma,o3 µg/m³,Malagrotta,21942,99.73,100.0,True
+2024,Roma,o3 µg/m³,VILLA ADA,21870,98.42,93.7,True
+2024,Roma,o3 µg/m³,VILLA ADA,7774928,98.1,87.12,True
+2024,Roma,pm10 µg/m³,ARENULA,21807,4.42,98.08,False
+2024,Roma,pm10 µg/m³,BUFALOTTA,21831,4.42,96.99,False
+2024,Roma,pm10 µg/m³,C.SO FRANCIA,21808,4.42,96.99,False
+2024,Roma,pm10 µg/m³,CINECITTA,5079457,4.4,96.99,False
+2024,Roma,pm10 µg/m³,CIPRO,21856,4.17,95.07,False
+2024,Roma,pm10 µg/m³,CIPRO,7777171,4.44,91.51,False
+2024,Roma,pm10 µg/m³,Fermi,21814,4.42,96.16,False
+2024,Roma,pm10 µg/m³,L.GO MAGNA GRECIA,21804,4.42,98.08,False
+2024,Roma,pm10 µg/m³,L.GO PERESTRELLO,21860,4.17,85.21,False
+2024,Roma,pm10 µg/m³,Malagrotta,21818,4.42,97.81,False
+2024,Roma,pm10 µg/m³,TIBURTINA,21855,4.42,95.89,False
+2024,Roma,pm10 µg/m³,VILLA ADA,21820,4.17,89.32,False
+2024,Roma,pm10 µg/m³,VILLA ADA,7777633,4.47,81.64,False
+2024,Roma,pm25 µg/m³,ARENULA,21806,4.42,97.26,False
+2024,Roma,pm25 µg/m³,C.SO FRANCIA,21846,4.42,96.16,False
+2024,Roma,pm25 µg/m³,CINECITTA,5079458,4.36,95.62,False
+2024,Roma,pm25 µg/m³,CIPRO,21857,4.17,94.52,False
+2024,Roma,pm25 µg/m³,CIPRO,7777172,4.44,90.96,False
+2024,Roma,pm25 µg/m³,Malagrotta,21830,4.42,98.08,False
+2024,Roma,pm25 µg/m³,VILLA ADA,21841,4.17,86.03,False
+2024,Roma,pm25 µg/m³,VILLA ADA,7777632,4.48,79.18,False
+2024,Torino,no2 µg/m³,Borgaro T. - Caduti,24477,86.04,91.51,True
+2024,Torino,no2 µg/m³,Settimo T. - Vivaldi,24475,86.19,90.68,True
+2024,Torino,no2 µg/m³,Torino - Consolata,24555,86.36,90.68,True
+2024,Torino,no2 µg/m³,Torino - Rebaudengo,24552,86.13,90.68,True
+2024,Torino,no2 µg/m³,Torino - Rubino,24821,86.11,90.68,True
+2024,Torino,no2 µg/m³,Torino Lingotto,7774721,83.96,82.47,True
+2024,Torino,o3 µg/m³,Borgaro T. - Caduti,24476,85.97,89.32,True
+2024,Torino,o3 µg/m³,Torino - Rubino,24820,84.4,86.58,True
+2024,Torino,o3 µg/m³,Torino Lingotto,7772972,84.73,81.92,True
+2024,Torino,pm10 µg/m³,Torino - Rubino,1764647,75.61,84.38,True
+2024,Torino,pm25 µg/m³,Torino - Rubino,1702604,73.22,84.38,True
+2025,Firenze,no2 µg/m³,FI-BASSI,24526,71.17,64.66,True
+2025,Firenze,no2 µg/m³,FI-GRAMSCI,5078863,26.11,19.45,False
+2025,Firenze,no2 µg/m³,FI-MOSSE,24528,77.76,76.71,True
+2025,Firenze,no2 µg/m³,FI-SCANDICCI,24392,71.11,63.29,True
+2025,Firenze,no2 µg/m³,FI-SETTIGNANO,23963,72.13,63.56,True
+2025,Firenze,o3 µg/m³,FI-SETTIGNANO,23964,76.83,77.81,True
+2025,Firenze,pm10 µg/m³,FI-BASSI,5078269,28.87,71.78,False
+2025,Firenze,pm10 µg/m³,FI-BOBOLI,5078739,27.99,73.42,False
+2025,Firenze,pm10 µg/m³,FI-GRAMSCI,5079209,29.32,18.63,False
+2025,Firenze,pm10 µg/m³,FI-MOSSE,5078299,27.49,73.97,False
+2025,Firenze,pm10 µg/m³,FI-SCANDICCI,5079211,28.13,73.97,False
+2025,Firenze,pm25 µg/m³,FI-BASSI,5078287,28.8,72.05,False
+2025,Firenze,pm25 µg/m³,FI-GRAMSCI,5079210,29.42,18.08,False
+2025,Milano,no2 µg/m³,CINISELLO B.,7773345,82.49,95.34,True
+2025,Milano,no2 µg/m³,Cormano-Edison,7774704,83.71,93.15,True
+2025,Milano,no2 µg/m³,LIMITO,24264,84.6,95.07,True
+2025,Milano,no2 µg/m³,MILANO - SENATO,24161,83.83,95.07,True
+2025,Milano,no2 µg/m³,MILANO - V.LE LIGURIA,7774184,84.93,96.44,True
+2025,Milano,no2 µg/m³,MILANO - V.LE MARCHE,24282,83.96,94.79,True
+2025,Milano,no2 µg/m³,MILANO - VERZIERE,24266,81.86,88.77,True
+2025,Milano,no2 µg/m³,MILANO PASCAL CITT� STUDI,24273,84.41,94.25,True
+2025,Milano,no2 µg/m³,S. GIULIANO,24090,82.56,91.23,True
+2025,Milano,no2 µg/m³,SESTO S.GIOVANNI,24280,85.07,92.88,True
+2025,Milano,o3 µg/m³,Cormano-Edison,7773586,82.58,92.88,True
+2025,Milano,o3 µg/m³,LIMITO,24263,84.5,95.34,True
+2025,Milano,o3 µg/m³,MILANO - VERZIERE,8613062,84.95,96.44,True
+2025,Milano,o3 µg/m³,MILANO PASCAL CITT� STUDI,24272,84.78,96.44,True
+2025,Milano,pm10 µg/m³,LIMITO,7775900,28.72,87.12,False
+2025,Milano,pm10 µg/m³,MILANO - SENATO,7773858,28.12,87.12,False
+2025,Milano,pm10 µg/m³,MILANO - V.LE MARCHE,7775924,84.5,95.89,True
+2025,Milano,pm10 µg/m³,MILANO - VERZIERE,7774070,83.27,94.25,True
+2025,Milano,pm10 µg/m³,MILANO PASCAL CITT� STUDI,7775985,27.98,87.67,False
+2025,Milano,pm25 µg/m³,MILANO - SENATO,7775178,28.34,72.33,False
+2025,Milano,pm25 µg/m³,MILANO - V.LE MARCHE,7774326,84.56,95.89,True
+2025,Milano,pm25 µg/m³,MILANO PASCAL CITT� STUDI,7773388,27.88,89.04,False
+2025,Milano,pm25 µg/m³,SESTO S.GIOVANNI,7774921,28.07,65.48,False
+2025,Napoli,no2 µg/m³,Casoria Scuola Palizzi (CAM),7775714,71.36,62.19,True
+2025,Napoli,no2 µg/m³,NA01 OSSERVATORIO ASTRONOMICO,7772823,75.99,59.73,False
+2025,Napoli,no2 µg/m³,NA02 OSPEDALE SANTOBONO,7773933,73.28,61.1,True
+2025,Napoli,no2 µg/m³,NA06 MUSEO NAZIONALE,7775341,73.8,61.64,True
+2025,Napoli,no2 µg/m³,NA07 ENTE FERROVIE,24979,73.04,61.1,True
+2025,Napoli,no2 µg/m³,NA08 OSPEDALE NUOVO PELLEGRINI,7773855,66.15,50.14,False
+2025,Napoli,no2 µg/m³,NA09 I.T.I.S. ARGINE,24982,72.41,61.92,True
+2025,Napoli,no2 µg/m³,Portici parco reggia,7773357,71.14,63.01,True
+2025,Napoli,no2 µg/m³,Tirrenopower Via Epomeo,7773712,71.51,62.74,True
+2025,Napoli,no2 µg/m³,Tirrenopower Volla,7774607,74.05,61.37,True
+2025,Napoli,o3 µg/m³,Casoria Scuola Palizzi (CAM),7774659,71.44,62.74,True
+2025,Napoli,o3 µg/m³,NA01 OSSERVATORIO ASTRONOMICO,7775800,72.77,61.64,True
+2025,Napoli,o3 µg/m³,Portici parco reggia,7773362,70.93,62.74,True
+2025,Napoli,pm10 µg/m³,NA06 MUSEO NAZIONALE,7772966,30.2,49.86,False
+2025,Napoli,pm10 µg/m³,NA07 ENTE FERROVIE,24417,33.47,77.26,True
+2025,Napoli,pm10 µg/m³,NA09 I.T.I.S. ARGINE,24416,33.04,82.19,True
+2025,Napoli,pm10 µg/m³,Tirrenopower Via Epomeo,7773786,74.41,60.82,True
+2025,Napoli,pm10 µg/m³,Tirrenopower Volla,7775676,74.5,61.1,True
+2025,Napoli,pm25 µg/m³,NA06 MUSEO NAZIONALE,7774365,30.2,49.86,False
+2025,Napoli,pm25 µg/m³,NA09 I.T.I.S. ARGINE,24415,32.91,81.92,True
+2025,Napoli,pm25 µg/m³,Tirrenopower Via Epomeo,7774434,74.45,60.55,True
+2025,Napoli,pm25 µg/m³,Tirrenopower Volla,7774252,74.64,60.82,True
+2025,Palermo,no2 µg/m³,PA - Belgio,7773400,32.62,85.48,True
+2025,Palermo,no2 µg/m³,PA - Boccadifalco,7774599,33.24,81.1,True
+2025,Palermo,no2 µg/m³,PA - Castelnuovo,7772765,31.01,85.48,True
+2025,Palermo,no2 µg/m³,PA - Di Blasi,7775020,32.37,85.75,True
+2025,Palermo,no2 µg/m³,PA - Indipendenza,7774942,31.63,84.66,True
+2025,Palermo,no2 µg/m³,PA - UNIPA,7774078,32.5,86.3,True
+2025,Palermo,o3 µg/m³,PA - Boccadifalco,7775122,30.27,79.18,True
+2025,Palermo,o3 µg/m³,PA - UNIPA,7774017,33.23,84.66,True
+2025,Roma,no2 µg/m³,ARENULA,21941,98.44,100.0,True
+2025,Roma,no2 µg/m³,BUFALOTTA,21912,97.57,98.9,True
+2025,Roma,no2 µg/m³,C.SO FRANCIA,21874,96.68,99.45,True
+2025,Roma,no2 µg/m³,CINECITTA,5078320,96.46,98.9,True
+2025,Roma,no2 µg/m³,CIPRO,21903,97.79,99.73,True
+2025,Roma,no2 µg/m³,CIPRO,24843,97.79,100.0,True
+2025,Roma,no2 µg/m³,FERMI,7775770,85.26,67.67,True
+2025,Roma,no2 µg/m³,Fermi,21864,95.66,100.0,True
+2025,Roma,no2 µg/m³,L.GO MAGNA GRECIA,21915,97.2,70.96,True
+2025,Roma,no2 µg/m³,L.GO PERESTRELLO,21885,97.91,100.0,True
+2025,Roma,no2 µg/m³,MALAGROTTA,7775677,79.95,94.79,True
+2025,Roma,no2 µg/m³,Malagrotta,21948,95.47,72.05,True
+2025,Roma,no2 µg/m³,TIBURTINA,21866,97.63,100.0,True
+2025,Roma,no2 µg/m³,VILLA ADA,21950,96.5,99.18,True
+2025,Roma,no2 µg/m³,VILLA ADA,7775133,96.47,99.45,True
+2025,Roma,o3 µg/m³,ARENULA,21947,99.88,99.73,True
+2025,Roma,o3 µg/m³,BUFALOTTA,21913,99.62,98.9,True
+2025,Roma,o3 µg/m³,CINECITTA,5078374,99.15,100.0,True
+2025,Roma,o3 µg/m³,CIPRO,21914,99.67,99.73,True
+2025,Roma,o3 µg/m³,CIPRO,24842,99.69,100.0,True
+2025,Roma,o3 µg/m³,L.GO PERESTRELLO,21925,99.97,100.0,True
+2025,Roma,o3 µg/m³,MALAGROTTA,7774738,83.9,95.34,True
+2025,Roma,o3 µg/m³,Malagrotta,21942,99.81,100.0,True
+2025,Roma,o3 µg/m³,VILLA ADA,21870,99.27,99.18,True
+2025,Roma,o3 µg/m³,VILLA ADA,7774928,99.24,99.45,True
+2025,Roma,pm10 µg/m³,ARENULA,21807,4.17,98.08,False
+2025,Roma,pm10 µg/m³,BUFALOTTA,21831,4.17,95.62,False
+2025,Roma,pm10 µg/m³,C.SO FRANCIA,21808,4.17,96.71,False
+2025,Roma,pm10 µg/m³,CINECITTA,5079457,4.17,97.81,False
+2025,Roma,pm10 µg/m³,CIPRO,21856,4.17,97.53,False
+2025,Roma,pm10 µg/m³,CIPRO,7777171,4.17,98.08,False
+2025,Roma,pm10 µg/m³,Fermi,21814,4.17,96.71,False
+2025,Roma,pm10 µg/m³,L.GO MAGNA GRECIA,21804,4.17,97.81,False
+2025,Roma,pm10 µg/m³,L.GO PERESTRELLO,21860,4.17,99.73,False
+2025,Roma,pm10 µg/m³,Malagrotta,21818,4.17,95.89,False
+2025,Roma,pm10 µg/m³,TIBURTINA,21855,4.17,96.71,False
+2025,Roma,pm10 µg/m³,VILLA ADA,21820,4.17,97.53,False
+2025,Roma,pm10 µg/m³,VILLA ADA,7777633,4.17,98.08,False
+2025,Roma,pm25 µg/m³,ARENULA,21806,4.17,98.63,False
+2025,Roma,pm25 µg/m³,C.SO FRANCIA,21846,4.17,98.63,False
+2025,Roma,pm25 µg/m³,CINECITTA,5079458,4.17,97.53,False
+2025,Roma,pm25 µg/m³,CIPRO,21857,4.17,96.71,False
+2025,Roma,pm25 µg/m³,CIPRO,7777172,4.17,97.26,False
+2025,Roma,pm25 µg/m³,Malagrotta,21830,4.17,95.34,False
+2025,Roma,pm25 µg/m³,VILLA ADA,21841,4.17,93.42,False
+2025,Roma,pm25 µg/m³,VILLA ADA,7777632,4.17,93.7,False
+2025,Torino,no2 µg/m³,Borgaro T. - Caduti,24477,82.63,94.25,True
+2025,Torino,no2 µg/m³,Settimo T. - Vivaldi,24475,82.13,91.23,True
+2025,Torino,no2 µg/m³,Torino - Consolata,24555,83.43,91.78,True
+2025,Torino,no2 µg/m³,Torino - Rebaudengo,24552,82.19,91.23,True
+2025,Torino,no2 µg/m³,Torino - Rubino,24821,82.92,94.52,True
+2025,Torino,no2 µg/m³,Torino Lingotto,7774721,82.74,89.59,True
+2025,Torino,o3 µg/m³,Borgaro T. - Caduti,24476,82.79,92.33,True
+2025,Torino,o3 µg/m³,Torino - Rubino,24820,83.05,93.15,True
+2025,Torino,o3 µg/m³,Torino Lingotto,7772972,82.86,91.23,True
+2025,Torino,pm10 µg/m³,Torino - Rubino,1764647,74.61,60.82,True
+2025,Torino,pm25 µg/m³,Torino - Rubino,1702604,75.26,60.27,True

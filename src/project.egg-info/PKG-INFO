@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: project
+Version: 0.1.1
+Requires-Python: >=3.11
+License-File: LICENCE.md
+Dynamic: license-file

@@ -1,0 +1,36 @@
+parameter,year,station_name,sensors_percent_coverage_per_year,exceedance_days_per_station
+no2 µg/m³,2021,Borgaro T. - Caduti,89.04,9
+no2 µg/m³,2021,Settimo T. - Vivaldi,89.59,35
+no2 µg/m³,2021,Torino - Consolata,89.32,79
+no2 µg/m³,2021,Torino - Rebaudengo,89.59,113
+no2 µg/m³,2021,Torino - Rubino,88.77,22
+no2 µg/m³,2022,Borgaro T. - Caduti,89.59,11
+no2 µg/m³,2022,Settimo T. - Vivaldi,94.79,22
+no2 µg/m³,2022,Torino - Consolata,93.15,66
+no2 µg/m³,2022,Torino - Rebaudengo,94.52,119
+no2 µg/m³,2022,Torino - Rubino,93.97,25
+no2 µg/m³,2023,Borgaro T. - Caduti,81.92,4
+no2 µg/m³,2023,Settimo T. - Vivaldi,79.45,11
+no2 µg/m³,2023,Torino - Consolata,81.1,27
+no2 µg/m³,2023,Torino - Rebaudengo,81.92,72
+no2 µg/m³,2023,Torino - Rubino,81.92,10
+no2 µg/m³,2024,Borgaro T. - Caduti,91.51,3
+no2 µg/m³,2024,Settimo T. - Vivaldi,90.68,6
+no2 µg/m³,2024,Torino - Consolata,90.68,32
+no2 µg/m³,2024,Torino - Rebaudengo,90.68,45
+no2 µg/m³,2024,Torino - Rubino,90.68,11
+no2 µg/m³,2024,Torino Lingotto,82.47,11
+no2 µg/m³,2025,Borgaro T. - Caduti,94.25,0
+no2 µg/m³,2025,Settimo T. - Vivaldi,91.23,1
+no2 µg/m³,2025,Torino - Consolata,91.78,1
+no2 µg/m³,2025,Torino - Rebaudengo,91.23,6
+no2 µg/m³,2025,Torino - Rubino,94.52,1
+no2 µg/m³,2025,Torino Lingotto,89.59,1
+pm10 µg/m³,2022,Torino - Rubino,63.84,16
+pm10 µg/m³,2023,Torino - Rubino,80.0,19
+pm10 µg/m³,2024,Torino - Rubino,84.38,24
+pm10 µg/m³,2025,Torino - Rubino,60.82,1
+pm25 µg/m³,2022,Torino - Rubino,72.88,57
+pm25 µg/m³,2023,Torino - Rubino,80.27,42
+pm25 µg/m³,2024,Torino - Rubino,84.38,29
+pm25 µg/m³,2025,Torino - Rubino,60.27,4

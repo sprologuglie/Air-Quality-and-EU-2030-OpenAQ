@@ -1,0 +1,10 @@
+# Tests, secrets and under developement
+.env
+.venv/
+tests_openaq.ipynb
+AQI_tests.ipynb
+
+# Data: big databased are not uploaded but can be reconstructed running the pipeline (see README.md)
+data/raw/
+data/processed/
+
