@@ -82,9 +82,9 @@ st.markdown("""
     <h3>Project Goal</h3>
     <p>This dashboard evaluates whether 6 major Italian cities are on track to meet 
     <strong>EU 2030 air quality targets</strong> (Directive 2024/2881), using real-time 
-    sensor data from 2021-2025.<br> <strong>Why This Matters</strong>: Air pollution causes ~300,000 premature deaths 
-    annually in the EU. The new 2030 standards are 50% stricter than current limits, 
-    requiring significant policy action.</p>
+    sensor data from 2021-2025.<br> Air pollution causes ~300,000 premature deaths 
+    annually in the EU and has to be taken seriously. The new 2030 standards are 50% stricter than current limits, 
+    requiring significant policy action, which would benefit from public information and data driven discussions.</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -289,20 +289,21 @@ Use the **page selector in the sidebar** to explore:
 - **📈 Time Series**: Daily and annual trends for individual cities
 - **🗺️ City Comparison**: Side-by-side analysis across cities
 - **🏙️ Station Deep-Dive**: Within-city variation across monitoring stations
-- **🔍 Data Quality**: Sensor coverage and methodology validation
+- **🔍 Data Quality**: Sensor coverage, flags and aggregations details
+- **⚙️ Methodology**: Complete methodological explanation          
 
 **Tip**: Start with **Compliance Analysis** to see which cities/pollutants need attention, 
 then use **Time Series** or **City Comparison** to understand specific temporal patterns. 
 **Station Deep-Dive** reveals local hotspots masked by city averages and help analyse each city in more detail.
-Finally **Data Quality** ensures you interpret results with the right confidence level. 
+Visiting **Data Quality** and **Methodology** ensures you interpret results with the right confidence level. 
 """)
 
 # ============================================================================
-# DATA CITATION
+# Author and citaitons
 # ============================================================================
 
  
-with st.expander("**How to Cite This Dashboard**", expanded=False):
+with st.expander("**Author and citations**", expanded=False):
     st.code("""
 @misc{sproloquio2025airquality,
   author = {Sproloquio, Guglielmo},
@@ -317,5 +318,5 @@ with st.expander("**How to Cite This Dashboard**", expanded=False):
     **Data Attribution**:
     - Air Quality Data: [OpenAQ](https://openaq.org/) (CC BY 4.0)
     - EU Standards: [Directive (EU) 2024/2881](https://eur-lex.europa.eu/eli/dir/2024/2881/oj)
-    - Analysis Code: [GitHub Repository](https://github.com/yourusername/air-quality)
+    - Analysis Code: [GitHub Repository](https://github.com/sprologuglie/Air-Quality-and-EU-2030-OpenAQ)
     """)
