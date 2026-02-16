@@ -148,9 +148,6 @@ If you reuse code, figures or processed data, please cite this repository and th
 ## Contributing
 See `CONTRIBUTING.md`. Issues and pull requests are welcome.
 
-### Work in progress
----
-
 ### Italian summary
 Questo progetto costruisce una pipeline riproducibile su dati OpenAQ per confrontare NO₂, O₃, PM₁₀ e PM₂.₅ in 6 città italiane (2020–2024)
 con standard UE attuali e target 2030, qualificando i risultati in base a copertura/qualità dati. Un approfondimento su Torino mostra eterogeneità tra stazioni e robustezza rispetto alle scelte di aggregazione.

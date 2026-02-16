@@ -4,6 +4,8 @@
 tests_openaq.ipynb
 AQI_tests.ipynb
 src/general
+app.py
+to_do.txt
 
 # Data: big databased are not uploaded but can be reconstructed running the pipeline (see README.md)
 data/raw/
