@@ -47,7 +47,7 @@ st.session_state.EU_STANDARDS = {
 def load_data():
     """Load processed data and quality checks."""
     try:
-        clean = pd.read_parquet("data/processed/clean.parquet")
+        clean = pd.read_parquet("data/clean.parquet")
         quality_city = pd.read_csv("results/quality_checks/cities_quality.csv")
         
         try:
