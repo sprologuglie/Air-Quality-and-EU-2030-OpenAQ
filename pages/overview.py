@@ -47,7 +47,7 @@ st.session_state.EU_STANDARDS = {
 def load_data():
     """Load processed data and quality checks."""
     try:
-        clean = pd.read_csv("data/processed/clean.csv")
+        clean = pd.read_parquet("data/processed/clean.parquet")
         quality_city = pd.read_csv("results/quality_checks/cities_quality.csv")
         
         try:
@@ -58,12 +58,6 @@ def load_data():
         return clean, quality_city, compliance
     except FileNotFoundError as e:
         st.error(f"Data files not found: {e}")
-        st.info("""
-        **To generate data, run the pipeline**:
-        ```bash
-        python -m project.pipeline
-        ```
-        """)
         st.stop()
 
 # Load data
