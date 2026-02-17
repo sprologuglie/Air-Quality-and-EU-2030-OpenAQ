@@ -122,7 +122,6 @@ for i, pollutant in enumerate(pollutants):
         st.markdown(f" <button class='pollutant-button' style='margin: 5px; padding: 10px 20px; border-radius: 8px; background-color: #8FDDFA; color: black; border: none; cursor: pointer;'> <a href='#{pollutant}' style='text-decoration: none; color: black;'>{pollutant}</a></button>", 
                     unsafe_allow_html=True, width='stretch')
 
-st.space("medium")
 
 if clean_df.empty:
     st.warning("No data available for analysis.")

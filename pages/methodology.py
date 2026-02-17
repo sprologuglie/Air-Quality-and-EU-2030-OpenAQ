@@ -63,10 +63,10 @@ st.markdown("""# Methodology
 - Definition of cities' **“flag”**
   - Each city, year, parameter is flagged with a quality based criterium.
   - Confidence labels (High/Medium/Low/Very Low):
-**High**     -->     >= 80 days avaiable     --AND--     >= 3 median active sensors per day <br>
-**Medium**   -->     >= 70 days avaiable     --AND--     >= 2 median active sensors per day <br>
-**Low**      -->     >= 60 days avaiable     --AND--     >= 2 median active sensors per day <br>
-**Very Low** -->     <  60 days avaiable     ---OR--      < 2 median active sensors per day <br>
+    **High**     -->     >= 80 days avaiable     --AND--     >= 3 median active sensors per day
+    **Medium**   -->     >= 70 days avaiable     --AND--     >= 2 median active sensors per day
+    **Low**      -->     >= 60 days avaiable     --AND--     >= 2 median active sensors per day 
+    **Very Low** -->     <  60 days avaiable     ---OR--      < 2 median active sensors per day
   Such values are in `config.yml` under "sensors_active_per_day_high_flag", "percent_days_avaiable_high_flag", "sensors_active_per_day_medium_flag",  "percent_days_avaiable_medium_flag", "sensors_active_per_day_low_flag" and  "percent_days_avaiable_low_flag"
 
 ## 6. Aggregation strategy

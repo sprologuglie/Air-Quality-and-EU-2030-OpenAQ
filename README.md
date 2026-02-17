@@ -6,12 +6,12 @@
 ### (Work in progress)
 
 A reproducible data pipeline and analysis of four major EU-regulated air pollutants (NO₂, O₃, PM₁₀, PM₂.₅) using OpenAQ data.
-The project compares city-level air quality against current EU standards and stricter 2030 targets, and includes a deep-dive on Turin to demonstrate station-level heterogeneity and robustness to aggregation choices.<br>
+The project compares city-level air quality against current EU standards and stricter 2030 targets, and includes a deep-dive on Turin to demonstrate station-level heterogeneity and robustness to aggregation choices.
 
 **NB  EU quality standards for assessing policy compliance are much more rigid than what this anaysis can implement. Therefore, results have to be taken as exploratory rather than evaluative**
 
 ## Why this project
-Urban air pollution is a high-impact, policy-relevant topic touching public health, environmental justice, and sustainable cities. EU has recently approved stricter targets to be met within January 1st 2030 (https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402881#anx_I) togheter additional regulations regarding pm2.5 and other pollutants. It is therefore important, as european citizens and organizations, to confront our cities air quality with such stricter standards, in order to propose and discuss data-based environmental policies, which can improve our life quality. <br>
+Urban air pollution is a high-impact, policy-relevant topic touching public health, environmental justice, and sustainable cities. EU has recently approved stricter targets to be met within January 1st 2030 (https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402881#anx_I) togheter additional regulations regarding pm2.5 and other pollutants. It is therefore important, as european citizens and organizations, to confront our cities air quality with such stricter standards, in order to propose and discuss data-based environmental policies, which can improve our life quality. 
 
 This repository aims to produce **transparent**, **reproducible**, and **quality-aware** indicators that can support evidence-based discussion. 
 
@@ -81,36 +81,37 @@ This repository aims to produce **transparent**, **reproducible**, and **quality
 ![NO2 exceedance days](results/plots/main/compliance_days_2030_no2.png)
 
 ## Repository structure outline
+  > not all files are included for more details see `docs/methodology.md`
 
-├── data/ <br>
-│ └── descriptive/ <br>
-├── reports/ <br>
-│ ├── Supplementary/ <br>
-│ ├── report.ipynb <br>
-│ └── turin_deep_dive.ipynb <br>
-├── docs/ <br>
-│ └── methodology.md <br>
-├── results/ <br>
-│ ├── plots/ <br>
-│   ├── CAQI/ <br>
-│   ├── density_plots/ <br>
-│   ├── main/ <br>
-│   └── seasonal_trends/ <br>
-│ └── quality_checks/ <br>
-│   ├── deepdive/ <br>
-│   └── figures/ <br>
-├── src/  <br>
-│ └── project <br>
-│   ├── fetch.py <br>
-│   ├── processing.py <br>
-│   ├── pipeline.py <br>
-│   └── results.py <br>
-├── .env.example <br>
-├── pyproject.toml <br>
-├── config.yml <br>
-├── requirements.txt <br>
-├── LICENSE <br>
-└── CONTRIBUTING.md <br>
+  ├── data/ 
+  │ └── descriptive/ 
+  ├── reports/ 
+  │ ├── Supplementary/ 
+  │ ├── report.ipynb 
+  │ └── turin_deep_dive.ipynb 
+  ├── docs/ 
+  │ └── methodology.md 
+  ├── results/ 
+  │ ├── plots/ 
+  │   ├── CAQI/ 
+  │   ├── density_plots/ 
+  │   ├── main/ 
+  │   └── seasonal_trends/ 
+  │ └── quality_checks/ 
+  │   ├── deepdive/ 
+  │   └── figures/ 
+  ├── src/  
+  │ └── project 
+  │   ├── fetch.py 
+  │   ├── processing.py 
+  │   ├── pipeline.py 
+  │   └── results.py 
+  ├── .env.example 
+  ├── pyproject.toml 
+  ├── config.yml 
+  ├── requirements.txt 
+  ├── LICENSE 
+  └── CONTRIBUTING.md 
 
 
 ## Methodology (1-minute overview)

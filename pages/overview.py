@@ -205,42 +205,7 @@ else:
     ```
     """)
 
-# ============================================================================
-# VISUAL: TREND OVERVIEW
-# ============================================================================
 
-st.space("medium")
-st.subheader("5-Year Trends: Are We Improving?")
-
-st.info("""
-**What to Look For**: Downward trends suggest cities are improving. 
-Flat or upward trends  mean current policies aren't enough for 2030 targets.
-""")
-
-# Calculate annual averages for all cities and pollutants
-annual_trends = clean_df.groupby(['year', 'parameter', 'city'])['day_mean_value'].mean().reset_index()
-
-# Create faceted plot
-fig = px.line(
-    annual_trends,
-    x='year',
-    y='day_mean_value',
-    color='city',
-    facet_col='parameter',
-    facet_col_wrap=2,
-    title="5-Year Pollution Trends by Pollutant",
-    labels={'day_mean_value': 'Annual Average (µg/m³)', 'year': 'Year'},
-    height=600
-)
-
-# Simplify facet titles
-fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
-
-fig.update_layout(
-    legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
-)
-
-st.plotly_chart(fig, width='stretch')
 
 # ============================================================================
 # KEY INSIGHTS
@@ -257,8 +222,8 @@ with col1:
         <h4>Positive Trends</h4>
         <ul>
             <li>NO₂ levels declining in most cities (traffic policies working)</li>
-            <li>Some cities already meet 2030 PM₁₀ targets</li>
-            <li>O₃ levels stable (meeting current standards)</li>
+            <li>Some cities already meet 2030 targets (e.g., No₂ in Florence)</li>
+            <li>All cities are meeting current standards for annual means</li>
         </ul>
     </div>
     """, unsafe_allow_html=True)
@@ -268,8 +233,8 @@ with col2:
     <div class="warning-card">
         <h4>Areas of Concern</h4>
         <ul>
-            <li>PM₂.₅ remains high in northern cities (winter heating)</li>
-            <li>Most cities still far from 2030 PM₂.₅ target (10 µg/m³)</li>
+            <li>Exceedance days are still high in many cities</li>
+            <li>Most cities still far from 2030 targets</li>
             <li>Quality gaps in some years reduce confidence</li>
         </ul>
     </div>

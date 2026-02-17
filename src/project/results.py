@@ -130,14 +130,14 @@ def Make_Compliance_Table():
 
                 if media > config['current_standards_year'][key]:
                     res['Compliance (Yearly Average)'] = f"Critical (Above current limits and above 2030 limits)"
-                    res['Percent Above Current Standards'] = f"{((media / config['current_standards_year'][key]) -1) *100}% above current standards"
-                    res['Percent Above 2030 Standards'] = f"{((media / config['new_standards_year'][key]) -1) *100}% above 2030 standards"
+                    res['Percent Above Current Standards'] = f"{((media / config['current_standards_year'][key]) -1) *100:.2f}% above current standards"
+                    res['Percent Above 2030 Standards'] = f"{((media / config['new_standards_year'][key]) -1) *100:.2f}% above 2030 standards"
                 
                 elif media <= config['current_standards_year'][key] and media > config['new_standards_year'][key]:
                     res['Compliance (Yearly Average)'] = f"Problematic (Below current limit but above 2030 limit)"
                     
                     res['Percent Above Current Standards'] = f"Below current standards"
-                    res['Percent Above 2030 Standards'] = f"{((media / config['new_standards_year'][key]) -1) *100}% above 2030 standards"
+                    res['Percent Above 2030 Standards'] = f"{((media / config['new_standards_year'][key]) -1) *100:.2f}% above 2030 standards"
                 
                 elif media <= config['new_standards_year'][key]:
                     res['Compliance (Yearly Average)'] = f"Good (Below current limit and also below 2030 limit)"
