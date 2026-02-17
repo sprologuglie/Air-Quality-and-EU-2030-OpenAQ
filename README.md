@@ -83,36 +83,35 @@ This repository aims to produce **transparent**, **reproducible**, and **quality
 ## Repository structure outline
 > not all files are included for more details see `docs/methodology.md`
 
-/
-  ├── data/ 
-  │ └── descriptive/ 
-  ├── reports/ 
-  │ ├── Supplementary/ 
-  │ ├── report.ipynb 
-  │ └── turin_deep_dive.ipynb 
-  ├── docs/ 
-  │ └── methodology.md 
-  ├── results/ 
-  │ ├── plots/ 
-  │   ├── CAQI/ 
-  │   ├── density_plots/ 
-  │   ├── main/ 
-  │   └── seasonal_trends/ 
-  │ └── quality_checks/ 
-  │   ├── deepdive/ 
-  │   └── figures/ 
-  ├── src/  
-  │ └── project 
-  │   ├── fetch.py 
-  │   ├── processing.py 
-  │   ├── pipeline.py 
-  │   └── results.py 
-  ├── .env.example 
-  ├── pyproject.toml 
-  ├── config.yml 
-  ├── requirements.txt 
-  ├── LICENSE 
-  └── CONTRIBUTING.md 
+  ├── data/  
+  │ └── descriptive/  
+  ├── reports/  
+  │ ├── Supplementary/  
+  │ ├── report.ipynb  
+  │ └── turin_deep_dive.ipynb  
+  ├── docs/  
+  │ └── methodology.md  
+  ├── results/  
+  │ ├── plots/  
+  │   ├── CAQI/  
+  │   ├── density_plots/  
+  │   ├── main/  
+  │   └── seasonal_trends/  
+  │ └── quality_checks/  
+  │   ├── deepdive/  
+  │   └── figures/  
+  ├── src/   
+  │ └── project  
+  │   ├── fetch.py  
+  │   ├── processing.py  
+  │   ├── pipeline.py  
+  │   └── results.py  
+  ├── .env.example  
+  ├── pyproject.toml  
+  ├── config.yml  
+  ├── requirements.txt  
+  ├── LICENSE  
+  └── CONTRIBUTING.md  
 
 
 ## Methodology (1-minute overview)
