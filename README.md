@@ -81,8 +81,9 @@ This repository aims to produce **transparent**, **reproducible**, and **quality
 ![NO2 exceedance days](results/plots/main/compliance_days_2030_no2.png)
 
 ## Repository structure outline
-  > not all files are included for more details see `docs/methodology.md`
+> not all files are included for more details see `docs/methodology.md`
 
+/
   ├── data/ 
   │ └── descriptive/ 
   ├── reports/ 
